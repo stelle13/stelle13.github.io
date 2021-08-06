@@ -3,6 +3,12 @@ permalink: /about/
 title: "About"
 ---
 
-Tempor velit sint sunt ipsum tempor enim ad qui ullamco. Est dolore anim ad velit duis dolore minim sunt aliquip amet commodo labore. Ut eu pariatur aute ea aute excepteur laborum. Esse ea esse excepteur minim mollit qui cillum excepteur ex dolore magna. Labore deserunt fugiat incididunt incididunt sint ea. Consequat dolore aute laboris quis proident quis non et est consectetur ex eiusmod sit culpa.
+Hello! 
 
-Cupidatat ea do et in excepteur in. Ad nostrud ut est esse eu duis ea sunt eiusmod. Aliquip tempor veniam sint elit fugiat. Velit incididunt laboris amet incididunt labore dolore irure velit excepteur commodo deserunt laborum. Consectetur eu fugiat veniam veniam Lorem labore magna eiusmod. Ea occaecat reprehenderit pariatur consectetur minim labore ut aliquip.
+I am currently a rising sophomore at Yonsei University in South Korea. Although currently an economics major, in the not-so-distant-future, I wish to study about deep learning and neural networks, given my interest in applied mathematics, including statistics. 
+
+Personally, I enjoy music well suited for rainy days, such as warm jazz or piano music from Ghibli Studio. If that sounds a bit dreary, I also enjoy the energy-packed rock-and-roll of AC/DC, the refreshing feel of Mozart, and the not-so-old (still hip actually) music from Queen. (Others on the list include Beethoven's symphonies and Hanz Zimmer scores.) 
+
+In terms of film, some of my favorites are *the Dark Knight*, *Inception*, and *Interstellar*, although there are many others on the list not directed by Christopher Nolan. 
+
+My chief philosophical tenet is to never stop learning. Obviously, it will be hard, but by learning new things, I will gain new insights. With these insights, I will find my own path through this incredibly complex world. 

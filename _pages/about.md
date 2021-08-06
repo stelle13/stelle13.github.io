@@ -3,7 +3,7 @@ permalink: /about/
 title: "About"
 ---
 
-Hello! 
+
 
 I am currently a rising sophomore at Yonsei University in South Korea. Although currently an economics major, in the not-so-distant-future, I wish to study about deep learning and neural networks, given my interest in applied mathematics, including statistics. 
 

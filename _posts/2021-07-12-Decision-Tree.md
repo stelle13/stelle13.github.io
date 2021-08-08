@@ -1305,7 +1305,7 @@ plt.ylabel('True')
     Text(33.0, 0.5, 'True')
 
 
-<img src="/assets/images/dts.png" class="center">
+<img src="/assets/images/dts.png" alt="dts" class="center">
 
 
 Here, we see that thirty-four out of fourty-two people with heart disease were correctly classified (80.95%), and among the thirty-three people without heart disease, twenty-eight were correctly classified (84.84%). 

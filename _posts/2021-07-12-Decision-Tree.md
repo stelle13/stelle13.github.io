@@ -1305,7 +1305,11 @@ plt.ylabel('True')
     Text(33.0, 0.5, 'True')
 
 
-<img src="/assets/images/dts.png" alt="dts" class="center">
+
+<figure class="align-center">
+  <img src="/assets/images/dts.png" alt="">
+  <figcaption>Confusion Matrix with Seaborn Heatmap</figcaption>
+</figure> 
 
 
 Here, we see that thirty-four out of fourty-two people with heart disease were correctly classified (80.95%), and among the thirty-three people without heart disease, twenty-eight were correctly classified (84.84%). 

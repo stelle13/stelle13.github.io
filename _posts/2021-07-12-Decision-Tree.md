@@ -3,6 +3,7 @@ title: "Decision Tree"
 date: 2021-07-12
 mathjax: true
 toc: true
+toc_sticky: true
 categories:
   - study
 tags:

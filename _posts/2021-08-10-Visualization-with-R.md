@@ -1,3 +1,14 @@
+---
+title: "Visualization with R"
+date: 2021-08-10
+toc: true
+toc_sticky: true
+categories:
+  - study
+tags:
+  - R
+---
+
 In this post, I will continue on from the previous post on learning R, but will focus primarily on data visualization. As stated before, the contents of this blog post heavily rely on Hadley Wickham and Garrett Grolemund's book, *R for Data Science*. 
 
 # Basic Graphs

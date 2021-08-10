@@ -1,6 +1,7 @@
 ---
 title: "Default or No Default?"
 toc: true
+toc_sticky: true
 categories:
   - study
 tags:
@@ -1469,6 +1470,10 @@ plot_confusion_matrix(shell_of_SVM, X_test_scaled, y_test, values_format='d', di
 <img src="/assets/images/svm.png">
 ​    
 
+<figure class="align-center">
+  <img src="/assets/images/svm.png" alt="">
+  <figcaption>Confusion Matrix with Scikit-learn</figcaption>
+</figure> 
 
 
 Here is the result, which shows that 187 people out of the 243 that did not default were correctly predicted to have not defaulted, For the 237 people that did default, 167 people were correctly predicted to have defaulted.  

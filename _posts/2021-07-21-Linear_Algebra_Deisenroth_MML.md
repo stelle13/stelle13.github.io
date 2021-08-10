@@ -3,6 +3,7 @@ title: "Linear Mapping & Basis Change"
 date: 2021-07-21
 mathjax: true
 toc: true
+toc_sticky: true
 categories:
   - study
 tags:
@@ -31,8 +32,6 @@ So without any further due, let's get right to some linear algebra.
 If the transformation $T: R^n \rightarrow R^m$ from $R^n$ to $R^m$ satisfies the two conditions below, the transformation $T$ is called a *linear transformation*, or a *linear mapping*.
 
 $$(1) \:\:\: T(\textbf u + \textbf v) = T(\textbf u) + T(\textbf v)$$ 
-
-\\
 
 $$(2) \:\:\: T(k \cdot \textbf u) = k \cdot T(\textbf u) \:\:\:(k \in \mathbb{R})$$
 
@@ -177,7 +176,7 @@ In other words, $ t_{r+1}(v_{r+1})+ ... +t_n(v_{r+n}) = s_{1}(v_{1})+ ... +s_n(v
 
 The above finding allows us to go back to our assumption immediately above, and because all the coefficients are zero, the set \{$T(v_{r+1}), ..., T(v_{n})$\} is linearly independent. Thus, we have shown the second part of the proof--that the above set is a basis for $Im(T)$--and conclude that dim($Im$($T$))$ = n-r. $ 
 
-Finally, because dim($ker(T)) = r$, dim($Im}(T))$ + dim($ker}(T))$ = $r + (n - r)$ = $n$ =  dim$(V)$. $\blacksquare$.
+Finally, because $dim(ker(T)) = r$, $dim(Im}(T)) + dim(ker}(T)) = r + (n - r) = n =  dim(V).$  $\blacksquare$.
 
 ## Conclusion
 

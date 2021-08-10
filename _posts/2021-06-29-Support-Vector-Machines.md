@@ -1465,11 +1465,6 @@ plot_confusion_matrix(shell_of_SVM, X_test_scaled, y_test, values_format='d', di
 
 
 
-
-​    
-<img src="/assets/images/svm.png">
-​    
-
 <figure class="align-center">
   <img src="/assets/images/svm.png" alt="">
   <figcaption>Confusion Matrix with Scikit-learn</figcaption>

@@ -13,34 +13,6 @@ boxplot(boxN)
 ```
 
 
-10
-
-
-
-100
-
-
-
-55
-
-
-
-<dl class=dl-horizontal>
-	<dt>0%</dt>
-		<dd>10</dd>
-	<dt>25%</dt>
-		<dd>30</dd>
-	<dt>50%</dt>
-		<dd>55</dd>
-	<dt>75%</dt>
-		<dd>80</dd>
-	<dt>100%</dt>
-		<dd>100</dd>
-</dl>
-
-
-
-
 
 <figure class="align-center">
   <img src="/assets/images/2 (1).png" alt="">

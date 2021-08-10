@@ -56,7 +56,6 @@ K-means clustering algorithms usually take the following steps.
 
 
 - Prepare data
-
 - Choose the number of classes (k)
 - Choose the initial centers of the clusters
 - Sort data into the nearest clusters
@@ -67,12 +66,14 @@ K-means clustering algorithms usually take the following steps.
 
 A common problem associated with k-means clustering, however, is closely related to step 3--choosing the k initial centers. Often, when computer-generated clusters undergo human inspection, one may notice that the clustering is counterintuitively incorrect. To avoid this error, in Scikit-learn, the kmean++ algorithm sets initial cluster centroid points in a relatively more efficient way--by setting the initial centroids to be the points farthest away from each other. If one chooses to randomly set the initial centroid points, a more accurate clustering result may be available from calculating the sum of the total variation for each cluster. By minimizing that sum, one usually gets the most accurate and intuitive clustering result. 
 
-In a similar fashion, if one is not sure about the ideal number of classes (k), one may consider the k value that minimizes the sum of the total variation in each cluster. There is a catch though--if k is the total number of data points, that is, if each cluster consists of only one point, then that sum is zero. Therefore, one must consider the sum of total variation *per* *k*. The following picture shows the reduction in the sum of total variation per k, plotted against k values. The "elbow point," or the point where the most drastic increase in this reduction occurs, is when k is three--and hence, the ideal value of k should be three. 
+In a similar fashion, if one is not sure about the ideal number of classes (k), one may consider the k value that minimizes the sum of the total variation in each cluster. There is a catch though--if k is the total number of data points, (that is, if each cluster consists of only one point) then that sum is zero. Therefore, one must consider the sum of total variation *per* *k*. The following picture shows the reduction in the sum of total variation per k, plotted against k values. The "elbow point," or the point where the most drastic increase in this reduction occurs, is when k is three--and hence, the ideal value of k should be three. 
 
 
 
-<img src="/assets/images/elbow point.PNG">
-
+<figure class="align-center">
+  <img src="/assets/images/elbow point.PNG" alt="">
+  <figcaption>Reduction In the Sum of Total Variation per k</figcaption>
+</figure> 
 
 
 This picture was taken from one of StatQuest's public-domain [tutorials](https://www.youtube.com/watch?v=4b5d3muPQmA&t=360s) on k-means clustering. Below is a demonstration of k-means clustering with nine data points, using Scikit-learn. 
@@ -190,10 +191,10 @@ sns.lmplot('height', 'weight',
 
 
 
-​    
-<img src="/assets/images/initialG.png">
-​    
-
+<figure class="align-center">
+  <img src="/assets/images/initialG.png" alt="">
+  <figcaption>Data Points Before Clustering</figcaption>
+</figure> 
 
 
 ```python
@@ -247,9 +248,10 @@ As is visible from the graph below, the data points have been grouped into three
 
 
 
-​    
-<img src="/assets/images/afterG.png">
-​    
+<figure class="align-center">
+  <img src="/assets/images/afterG.png" alt="">
+  <figcaption>Data Points After Clustering</figcaption>
+</figure> 
 
 
 
@@ -364,10 +366,12 @@ sns.lmplot('height', 'weight', data=df1, fit_reg=False,
 
 
 
+<figure class="align-center">
+  <img src="/assets/images/finalG.png" alt="">
+  <figcaption>Data Points + Centroids After Clustering</figcaption>
+</figure> 
 
-​    
-<img src="/assets/images/finalG.png">
-​    
+
 
 As can be seen from the graph above, there are three additional points in the graph, with one for each cluster. The additional points are the centroids for each cluster, as was calculated by the k-means clustering algorithm.
 

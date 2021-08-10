@@ -2,6 +2,7 @@
 title: "Quick Review of DataFrame & Matplotlib"
 date: 2021-07-24
 toc: true
+toc_sticky: true
 categories:
   - study
 tags:
@@ -2758,9 +2759,11 @@ plt.show()
 ```
 
 
-​    
-<img src="/assets/images/df1.png">
-​    
+<figure class="align-center">
+  <img src="/assets/images/df1.png" alt="">
+  <figcaption>Matplotlib Graph</figcaption>
+</figure> 
+ 
 
 
 ***
@@ -2780,9 +2783,10 @@ plt.grid(True)
 ```
 
 
-​    
-<img src="/assets/images/df2.png">
-​    
+<figure class="align-center">
+  <img src="/assets/images/df2.png" alt="">
+  <figcaption>Plotting Multiple Graphs</figcaption>
+</figure> 
 
 
 ***
@@ -2819,10 +2823,10 @@ plt.show()
 ```
 
 
-​    
-<img src="/assets/images/df3.png">
-​    
-
+<figure class="align-center">
+  <img src="/assets/images/df3.png" alt="">
+  <figcaption>Subplots</figcaption>
+</figure> 
 
 ***
 
@@ -2846,9 +2850,14 @@ plt.show() # b: blue, g: green, c: cyan, r:red, etc
 ```
 
 
-​    
-<img src="/assets/images/df4.png">
-​    
+
+<figure class="align-center">
+  <img src="/assets/images/df4.png" alt="">
+  <figcaption>Trig Functions</figcaption>
+</figure> 
+
+
+
 
 
 ***
@@ -2871,9 +2880,14 @@ plt.show()
 ```
 
 
-​    
-<img src="/assets/images/df5.png">
-​    
+
+<figure class="align-center">
+  <img src="/assets/images/df5.png" alt="">
+  <figcaption>Lines with Different Styles</figcaption>
+</figure> 
+
+
+
 
 
 ***
@@ -2902,10 +2916,12 @@ ax.bar(theta, radii, width=width, bottom=0.0, color=colors, alpha=0.5)
 plt.show()
 ```
 
+    
 
-​    
-<img src="/assets/images/df6.png">
-​    
+<figure class="align-center">
+  <img src="/assets/images/df6.png" alt="">
+  <figcaption>Radar Charts</figcaption>
+</figure> 
 
 
 ***
@@ -3086,11 +3102,11 @@ fig.tight_layout()
 plt.show()
 ```
 
-
-​    
-<img src="/assets/images/df7.png">
-​    
-
+    
+<figure class="align-center">
+  <img src="/assets/images/df7.png" alt="">
+  <figcaption>Confusion Matrix</figcaption>
+</figure> 
 
 ***
 

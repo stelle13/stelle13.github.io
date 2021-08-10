@@ -373,6 +373,6 @@ sns.lmplot('height', 'weight', data=df1, fit_reg=False,
 
 
 
-As can be seen from the graph above, there are three additional points in the graph, with one for each cluster. The additional points are the centroids for each cluster, as was calculated by the k-means clustering algorithm.
+As can be seen from the graph above, there are three additional points in the graph, with one for each cluster. The additional points are the centroids for each cluster, as calculated by the k-means clustering algorithm.
 
 This is the end of the post! As always, thank you for reading. 

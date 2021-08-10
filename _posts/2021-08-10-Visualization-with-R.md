@@ -42,7 +42,9 @@ boxplot(boxN)
 
 
 
-![png](2R_files/2R_3_4.png)
+<figure class="align-center">
+  <img src="/assets/images/2 (1).png" alt="">
+</figure> 
     
 
 
@@ -55,9 +57,9 @@ boxplot(seq1, seq2, names=c("Seq A", "Seq B"))
 ```
 
 
-​    
-![png](2R_files/2R_4_0.png)
-​    
+<figure class="align-center">
+  <img src="/assets/images/2 (6).png" alt="">
+</figure> 
 
 
 ## Histogram
@@ -77,7 +79,9 @@ message("Standard Deviation: ", sd(seq2))
 
 
 
-![png](2R_files/2R_6_1.png)
+<figure class="align-center">
+  <img src="/assets/images/2 (7).png" alt="">
+</figure> 
     
 
 
@@ -98,7 +102,9 @@ pie(x=table(Grade))
 
 
 
-![png](2R_files/2R_8_1.png)
+<figure class="align-center">
+  <img src="/assets/images/2 (8).png" alt="">
+</figure> 
     
 
 
@@ -109,14 +115,16 @@ pie(x=table(Grade), col=heat.colors(5))
 ```
 
 
-​    
-![png](2R_files/2R_9_0.png)
-​    
+<figure class="align-center">
+  <img src="/assets/images/2 (9).png" alt="">
+</figure> 
 
 
 
 
-![png](2R_files/2R_9_1.png)
+<figure class="align-center">
+  <img src="/assets/images/2 (10).png" alt="">
+</figure> 
     
 
 
@@ -133,9 +141,9 @@ barplot(table(Grade)
 ```
 
 
-​    
-![png](2R_files/2R_11_0.png)
-​    
+<figure class="align-center">
+  <img src="/assets/images/2 (11).png" alt="">
+</figure>  
 
 
 # R4DS
@@ -186,9 +194,9 @@ ggplot(data = mpg) + # ggplot(data = mpg) creates an empty graph
 ```
 
 
-​    
-![png](2R_files/2R_19_0.png)
-​    
+<figure class="align-center">
+  <img src="/assets/images/2 (12).png" alt="">
+</figure> 
 
 
 Mapping a VARIABLE (class) to an AESTHETIC (color parameter) shows the cars' classes. 
@@ -206,9 +214,9 @@ ggplot(data = mpg) +
 ```
 
 
-​    
-![png](2R_files/2R_22_0.png)
-​    
+<figure class="align-center">
+  <img src="/assets/images/2 (13).png" alt="">
+</figure>   
 
 
 ### Scatterplot With Different Shapes
@@ -231,9 +239,9 @@ ggplot(data = mpg) +
     "Removed 62 rows containing missing values (geom_point)."
 
 
-​    
-![png](2R_files/2R_24_1.png)
-​    
+<figure class="align-center">
+  <img src="/assets/images/2 (14).png" alt="">
+</figure> 
 
 
 ### Scatterplot With Uniform Color
@@ -246,9 +254,9 @@ ggplot(data = mpg) +
 ```
 
 
-​    
-![png](2R_files/2R_26_0.png)
-​    
+<figure class="align-center">
+  <img src="/assets/images/2 (15).png" alt="">
+</figure> 
 
 
 ### Subplots for Scatterplot
@@ -262,9 +270,9 @@ ggplot(data=mpg) +
 ```
 
 
-​    
-![png](2R_files/2R_28_0.png)
-​    
+<figure class="align-center">
+  <img src="/assets/images/2 (16).png" alt="">
+</figure> 
 
 
 ## Regression Lines
@@ -281,8 +289,9 @@ ggplot(data = mpg) +
 
 
 
-![png](2R_files/2R_30_1.png)
-    
+<figure class="align-center">
+  <img src="/assets/images/2 (17).png" alt="">
+</figure>   
 
 
 ## Regression Lines + Scatterplot
@@ -305,7 +314,9 @@ ggplot(data = mpg, mapping = aes(x = displ, y = hwy)) + # Use global mapping
 
 
 
-![png](2R_files/2R_32_1.png)
+<figure class="align-center">
+  <img src="/assets/images/2 (18).png" alt="">
+</figure> 
     
 
 
@@ -339,8 +350,9 @@ ggplot(data = diamonds) +
 
 
 
-![png](2R_files/2R_34_1.png)
-    
+<figure class="align-center">
+  <img src="/assets/images/2 (19).png" alt="">
+</figure>   
 
 
 The function `ggplot(data = diamonds)` loads the diamond dataset into `ggplot()`, which consists of statistical information of about 54,000 diamonds. The function `geom_bar()` specifies that the chart will be a bar chart, with the x-axis assigned to "cut"--one of the many statistical parameters of the diamond dataset. 
@@ -352,9 +364,9 @@ ggplot(data = diamonds) +
 ```
 
 
-​    
-![png](2R_files/2R_36_0.png)
-​    
+<figure class="align-center">
+  <img src="/assets/images/2 (20).png" alt="">
+</figure>  
 
 
 The following chart separates each bar into distinct sections, depending on the clarity--another category of the diamonds dataset. 
@@ -366,9 +378,9 @@ ggplot(data = diamonds) +
 ```
 
 
-​    
-![png](2R_files/2R_38_0.png)
-​    
+<figure class="align-center">
+  <img src="/assets/images/2 (21).png" alt="">
+</figure>   
 
 
 To more easily compare the proportions of diamonds within each bar, one needs to set the bars to the same height by assigning proportion to the y-axis. This is done by specifying the `position` parameter to `fill`, outside the `mapping = aes()` argument.    
@@ -383,9 +395,9 @@ ggplot(data = diamonds) +
 ```
 
 
-​    
-![png](2R_files/2R_40_0.png)
-​    
+<figure class="align-center">
+  <img src="/assets/images/2 (22).png" alt="">
+</figure>  
 
 
 Notice that the bars are at the same height, and that the y-axis stands for proportion. If comparing proportions within a single bar is visually difficult, one can separate the bar into many bars with respect to the clarity. 
@@ -400,9 +412,9 @@ ggplot(data = diamonds) +
 ```
 
 
-​    
-![png](2R_files/2R_42_0.png)
-​    
+<figure class="align-center">
+  <img src="/assets/images/2 (23).png" alt="">
+</figure>   
 
 
 ## Maps: United States, U.K, East Asia
@@ -419,9 +431,9 @@ ggplot(nz, aes(long, lat, group = group)) +
 ```
 
 
-​    
-![png](2R_files/2R_45_0.png)
-​    
+<figure class="align-center">
+  <img src="/assets/images/2 (24).png" alt="">
+</figure>  
 
 
 ### United Kingdom
@@ -436,9 +448,9 @@ ggplot(uk, aes(long, lat, group = group)) +
 ```
 
 
-​    
-![png](2R_files/2R_47_0.png)
-​    
+<figure class="align-center">
+  <img src="/assets/images/2 (25).png" alt="">
+</figure>     
 
 
 ### East Asia
@@ -453,9 +465,9 @@ ggplot(korea, aes(long, lat, group = group)) +
 ```
 
 
-​    
-![png](2R_files/2R_49_0.png)
-​    
+<figure class="align-center">
+  <img src="/assets/images/2 (26).png" alt="">
+</figure>     
 
 
 ### Coxcomb Chart
@@ -476,13 +488,15 @@ bar + coord_polar()
 ```
 
 
-​    
-![png](2R_files/2R_51_0.png)
-​    
+<figure class="align-center">
+  <img src="/assets/images/2 (27).png" alt="">
+</figure>     
 
 
 
 
-![png](2R_files/2R_51_1.png)
+<figure class="align-center">
+  <img src="/assets/images/2 (28).png" alt="">
+</figure>  
     
 

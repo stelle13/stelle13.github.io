@@ -3,6 +3,7 @@ title: "Mathematical Statistics"
 date: 2021-07-04
 mathjax: true
 toc: true
+toc_sticky: true
 categories:
   - study
 tags:

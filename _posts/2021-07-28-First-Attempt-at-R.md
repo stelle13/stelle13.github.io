@@ -1,3 +1,14 @@
+---
+title: "First Attempt at R"
+date: 2021-07-28
+toc: true
+toc_sticky: true
+categories:
+  - study
+tags:
+  - R
+---
+
 In this post, I will go over what I learned during my first attempt at R.  
 
 # Motivation

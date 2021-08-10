@@ -39,7 +39,7 @@ Of course, the properties of the jpdf function are as follows:
 
 In the case of a discrete random vector $(X_1, X_2)$,
 
-$$ (i)\;\; 0\leq f_{X_1,X_2} (x_1, x_2) \leq 1 \;\;\; \text{and} \;\;\; (ii) \;\; \sum\sum \; f{X_1, X_2} (x_1, x_2) = 1 $$ 
+$$ (i)\;\; 0\leq f_{X_1, X_2} (x_1, x_2) \leq 1 \;\;\; \text{and} \;\;\; (ii) \;\; \sum\sum \; f_{X_1, X_2} (x_1, x_2) = 1 $$ 
 
 , and for the case of a continuous random vector $(X_1, X_2)$, condition (ii) would simply be changed to... 
 

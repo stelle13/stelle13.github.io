@@ -90,7 +90,7 @@ social:
 analytics:
   provider               : "google-gtag"
   google:
-    tracking_id          : "G-SK31GS6YMQ"
+    tracking_id          : "G-HRR0YHZ4D2"
     anonymize_ip         : false 
 
 

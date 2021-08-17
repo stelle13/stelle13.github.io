@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://inlustris1113.github.io/sitemap.xml

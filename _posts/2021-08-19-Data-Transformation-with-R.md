@@ -362,7 +362,9 @@ ggplot(data = delay, mapping= aes(x = dist, y = delay)) +   # graph of delay
 
 
 
-![png](r2_files/r2_27_1.png)
+<figure class="align-center">
+  <img src="/assets/images/r21 (1).png" alt="">
+</figure> 
     
 
 
@@ -467,10 +469,9 @@ ggplot(data = delays, mapping=aes(x=n, y=delay)) +
     geom_point(alpha = 1/10)
 ```
 
-
-​    
-![png](r2_files/r2_33_0.png)
-​    
+<figure class="align-center">
+  <img src="/assets/images/r21 (2).png" alt="">
+</figure> 
 
 
 ## `summarize()` functions: `mean()`, `sd()`,` IQR()`, `max()`,`min()`

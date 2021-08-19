@@ -28,7 +28,7 @@ boxplot(boxN)
 <figure class="align-center">
   <img src="/assets/images/2 (1).png" alt="">
 </figure> 
-    
+​    
 
 
 
@@ -65,7 +65,7 @@ message("Standard Deviation: ", sd(seq2))
 <figure class="align-center">
   <img src="/assets/images/2 (7).png" alt="">
 </figure> 
-    
+​    
 
 
 ## Pie Chart
@@ -88,7 +88,7 @@ pie(x=table(Grade))
 <figure class="align-center">
   <img src="/assets/images/2 (8).png" alt="">
 </figure> 
-    
+​    
 
 
 
@@ -108,7 +108,7 @@ pie(x=table(Grade), col=heat.colors(5))
 <figure class="align-center">
   <img src="/assets/images/2 (10).png" alt="">
 </figure> 
-    
+​    
 
 
 ## Barplot
@@ -300,7 +300,7 @@ ggplot(data = mpg, mapping = aes(x = displ, y = hwy)) + # Use global mapping
 <figure class="align-center">
   <img src="/assets/images/2 (18).png" alt="">
 </figure> 
-    
+​    
 
 
 ## Barplot
@@ -481,5 +481,5 @@ bar + coord_polar()
 <figure class="align-center">
   <img src="/assets/images/2 (28).png" alt="">
 </figure>  
-    
+​    
 

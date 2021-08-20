@@ -1,6 +1,7 @@
 ---
 title: "Dive into Distributions"
 date: 2021-08-20
+mathjax: true
 toc: true
 categories:
   - study

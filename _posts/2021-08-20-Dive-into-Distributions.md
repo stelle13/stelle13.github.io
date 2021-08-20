@@ -60,7 +60,13 @@ In such a case, $X$ is called the random variable of a *Poisson* distribution. I
 
 The first condition, independence, means that events in one time interval or space are independent from, and do not affect the probabilities of, events in other time intervals and spaces. The second condition, consistency, implies that the rate of the events' occurrences is consistent. Finally, the third condition, non-clusteredness, signifies that the events must not be clustered together in a short timeframe. 
 
-The coffee shop example above is a rather oversimplified real-life example of where a Poisson distribution might be seen. In reality, a Poisson distribution is essentially a binomial distribution under special circumstances--the number of trials must approach infinity, and the probability of success must approach zero. In other words, if a binomial distribution describes the probability of observing $k$ successes among $n$ trials with $p$ as the probability of success ($p(k)$ = ${}_{n}C_{k}$ $\cdot$ $p^k$ $\cdot$ $(1-p)^{n-k}$), if $n \longrightarrow \infty$ and $p \longrightarrow 0$, then $P(X=k)$ = $\frac{\lambda^k e^-\lambda}{k!}$. The proof is shown below. 
+The coffee shop example above is a rather oversimplified real-life example of where a Poisson distribution might be seen. In reality, a Poisson distribution is essentially a binomial distribution under special circumstances--the number of trials must approach infinity, and the probability of success must approach zero. In other words, if a binomial distribution describes the probability of observing $k$ successes among $n$ trials with $p$ as the probability of success,  
+
+$$ p(k) = {}_{n}C_{k} \cdot p^k \cdot (1-p)^{n-k}, $$
+
+if $$n \longrightarrow \infty \;\; \text{and}\;\; p \longrightarrow 0,$$ 
+
+then $$ P(X=k) = \frac{\lambda^k e^-\lambda}{k!} $$. The proof is shown below. 
 
 We start with the basic binomial distribution formula: 
 

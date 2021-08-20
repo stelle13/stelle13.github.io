@@ -25,7 +25,7 @@ A Bernouille trial is a trial in which the only outcomes are either success or f
 
 $$ p(x) = p^x \cdot (1-p)^{1-x}, \text{ for } x = 0,1 $$
 
-In this case, it is easy to see that $p(0) = 1-p$ and $p(1) = p$. Therefore, the expectation value $E(X) = 0 \cdot (1-p)+1 \cdot (p) = p$. Notsurprisingly, X, the random variable for a Bernouilli trial, has a Bernoille distribution. 
+In this case, it is easy to see that $p(0) = 1-p$ and $p(1) = p$. Therefore, the expectation value $E(X)$ is as follows: $$E(X) = 0 \cdot (1-p)+1 \cdot (p) = p$$. Not surprisingly, X, the random variable for a Bernouilli trial, has a Bernoille distribution. 
 
 For the variance of X, we use the variance formula: 
 
@@ -60,7 +60,7 @@ In such a case, $X$ is called the random variable of a *Poisson* distribution. I
 
 The first condition, independence, means that events in one time interval or space are independent from, and do not affect the probabilities of, events in other time intervals and spaces. The second condition, consistency, implies that the rate of the events' occurrences is consistent. Finally, the third condition, non-clusteredness, signifies that the events must not be clustered together in a short timeframe. 
 
-The coffee shop example above is a rather oversimplified real-life example of where a Poisson distribution might be seen. In reality, a Poisson distribution is essentially a binomial distribution under special circumstances--the number of trials must approach infinity, and the probability of success must approach zero. In other words, if a binomial distribution describes the probability of observing $k$ successes among $n$ trials with $p$ as the probability of success ($ p(k) = {}_{n}C_{k} \cdot p^k \cdot(1-p)^{n-k} $), if $n \longrightarrow \infty$ and $p \longrightarrow 0$, then $P(X=k) = \frac{\lambda^k e^-\lambda}{k!}$. The proof is shown below. 
+The coffee shop example above is a rather oversimplified real-life example of where a Poisson distribution might be seen. In reality, a Poisson distribution is essentially a binomial distribution under special circumstances--the number of trials must approach infinity, and the probability of success must approach zero. In other words, if a binomial distribution describes the probability of observing $k$ successes among $n$ trials with $p$ as the probability of success ($p(k)$ = ${}_{n}C_{k}$ $\cdot$ $p^k$ $\cdot$ $(1-p)^{n-k}$), if $n \longrightarrow \infty$ and $p \longrightarrow 0$, then $P(X=k)$ = $\frac{\lambda^k e^-\lambda}{k!}$. The proof is shown below. 
 
 We start with the basic binomial distribution formula: 
 

@@ -184,21 +184,21 @@ plt.show()
 ```
 
 
-​    
-![png](1_files/1_9_0.png)
-​    
+
+<figure class="align-center">
+  <img src="/assets/images/h1 (1).png" alt="">
+</figure> 
+
+
+<figure class="align-center">
+  <img src="/assets/images/h1 (2).png" alt="">
+</figure> 
 
 
 
-
-![png](1_files/1_9_1.png)
-    
-
-
-
-
-![png](1_files/1_9_2.png)
-    
+<figure class="align-center">
+  <img src="/assets/images/h1 (3).png" alt="">
+</figure> 
 
 
 Then two `Dense` layers will be added.  
@@ -252,7 +252,9 @@ The output of a softmax activation function may look as follows: $[0.09003057, 0
 
 The more complete picture of the interaction between the input layer and the softmax output layer is provided below. The [diagram](https://www.researchgate.net/figure/Softmax-layer-with-neural-network-31_fig2_349823091) below, which is under a [Creative Commons license](https://creativecommons.org/licenses/by-sa/4.0/) for redistribution, was taken from this [paper](https://www.researchgate.net/publication/349823091_Deep_learning_model_for_glioma_meningioma_and_pituitary_classification) by A. Sadoon, T. Mohammed, and A. Mohammed. 
 
-![dia25.PNG]
+<figure class="align-center">
+  <img src="/assets/images/h1 (4).png" alt="">
+</figure> 
 
 In the input layer, each of the nodes produces a scalar value $x_j$. A total of $n$ scalar values make up the input vector $\textbf{x}$, and the $j$th node is matched to the transpose of vector $\textbf{w}_j^{T}$ to produce $z_j$ as a cross-product output. That is, the $n$th node is matched with $\textbf{w}_n^{T}$ to produce $z_n = (\textbf{w}_n)^{T} \cdot \textbf{x}  + b$ as an output. Then the vector whose elements are these output values is fed into the softmax function to produce the probability distribution that is visible to the right.  
 

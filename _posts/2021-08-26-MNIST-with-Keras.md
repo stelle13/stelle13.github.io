@@ -183,22 +183,13 @@ plt.imshow(digit3, cmap=plt.cm.binary)
 plt.show()
 ```
 
+<figure class="third">
+	<img src="/assets/images/h1 (1).png" alt="">
+	<img src="/assets/images/h1 (2).png" alt="">
+	<img src="/assets/images/h1 (3).png" alt="">
+	<figcaption>Three Hand-Written Digits: 3, 6, 1</figcaption>
+</figure>
 
-
-<figure class="align-center">
-  <img src="/assets/images/h1 (1).png" alt="">
-</figure> 
-
-
-<figure class="align-center">
-  <img src="/assets/images/h1 (2).png" alt="">
-</figure> 
-
-
-
-<figure class="align-center">
-  <img src="/assets/images/h1 (3).png" alt="">
-</figure> 
 
 
 Then two `Dense` layers will be added.  
@@ -252,9 +243,13 @@ The output of a softmax activation function may look as follows: $[0.09003057, 0
 
 The more complete picture of the interaction between the input layer and the softmax output layer is provided below. The [diagram](https://www.researchgate.net/figure/Softmax-layer-with-neural-network-31_fig2_349823091) below, which is under a [Creative Commons license](https://creativecommons.org/licenses/by-sa/4.0/) for redistribution, was taken from this [paper](https://www.researchgate.net/publication/349823091_Deep_learning_model_for_glioma_meningioma_and_pituitary_classification) by A. Sadoon, T. Mohammed, and A. Mohammed. 
 
+
+
 <figure class="align-center">
-  <img src="/assets/images/h1 (4).png" alt="">
+  <img src="/assets/images/h1 (4).png" alt="Multi-Class Classification with Softmax">
 </figure> 
+
+
 
 In the input layer, each of the nodes produces a scalar value $x_j$. A total of $n$ scalar values make up the input vector $\textbf{x}$, and the $j$th node is matched to the transpose of vector $\textbf{w}_j^{T}$ to produce $z_j$ as a cross-product output. That is, the $n$th node is matched with $\textbf{w}_n^{T}$ to produce $z_n = (\textbf{w}_n)^{T} \cdot \textbf{x}  + b$ as an output. Then the vector whose elements are these output values is fed into the softmax function to produce the probability distribution that is visible to the right.  
 
@@ -278,8 +273,9 @@ This Youtube [video](https://www.youtube.com/watch?v=ILmANxT-12I&t=12s&ab_channe
 Applied to an example softmax layer in this [blog](https://towardsdatascience.com/cross-entropy-loss-function-f38c4ec8643e), it becomes clear that the purpose of the loss function is to calculate the distance between the predicted results and the actual labels. The arithmetic involved in the process is shown below, which provides 0.3677 as the loss score. 
 
 
-$$ CE = -\sum_{i=1}^{C} t_i \cdot log(f(\textbf{z})_i) \\ = [1 \cdot log_2(0.775) + 0 \cdot log_2(0.116) + 0 \cdot log_2(0.039) + 0 \cdot log_2(0.07)] 
-= 0.3677 $$
+$$ CE = -\sum_{i=1}^{C} t_i \cdot log(f(\textbf{z})_i) $$
+$$ = [1 \cdot log_2(0.775) + 0 \cdot log_2(0.116) + 0 \cdot log_2(0.039) + 0 \cdot log_2(0.07)] $$
+$$ = 0.3677 $$
 
 The role of the optimizer then, is to use the loss score provided by the loss function to adjust the weights of the layers, in a process known as *backpropagation*.
 

@@ -399,9 +399,9 @@ results
 
 As can be seen above, the validation loss dips toward two or three epochs, then skyrockets after that point. This tells us that the seventeen epochs that came after the third epoch contributed to the model *overfitting* on the training data, which made the model less reliable for unseen data (such as the 10000 samples set aside before training).
 
-That being said, after twenty epochs, the model achieved a somewhat high accuracy of 88.07% at evaluating the sentiment of movie reviews--a classic binary classification problem. 
+That being said, after twenty epochs, the model achieved a somewhat high accuracy of 88.07% at evaluating the sentiment of movie reviews--a classic binary classification problem. If the issue of overfitting had been resolved by using only three epochs instead of twenty, the accuracy would have grown to about 90%. 
 
 ## Conclusion
 
-In this post, I went over a well-known, basic example of a binary sentiment analysis of movie reviews using neural networks. In the next post, I will continue to go down the rabbit hole towards the world of neural networks, working on the Reuters and the Boston housing price datasets. Thanks for reading. 
+In this post, I went over a well-known, basic example of a binary sentiment analysis of movie reviews using neural networks. In the next post, I will continue to go down the rabbit hole in the world of neural networks, working on the Reuters and the Boston housing price datasets. Thanks for reading. 
 

@@ -275,7 +275,9 @@ Applied to an example softmax layer in this [blog](https://towardsdatascience.co
 
 
 $$ CE = -\sum_{i=1}^{C} t_i \cdot log(f(\textbf{z})_i) $$
+
 $$ = [1 \cdot log_2(0.775) + 0 \cdot log_2(0.116) + 0 \cdot log_2(0.039) + 0 \cdot log_2(0.07)] $$
+
 $$ = 0.3677 $$
 
 The role of the optimizer then, is to use the loss score provided by the loss function to adjust the weights of the layers, in a process known as *backpropagation*.
@@ -344,10 +346,6 @@ network.fit(train_images, train_labels, epochs=5, batch_size=128)
     469/469 [==============================] - 5s 12ms/step - loss: 0.0482 - accuracy: 0.9857
     Epoch 5/5
     469/469 [==============================] - 5s 11ms/step - loss: 0.0371 - accuracy: 0.9888
-
-
-
-
 
     <keras.callbacks.History at 0x7fe45c736d50>
 

@@ -214,9 +214,10 @@ plt.show()
 ```
 
 
-​    
-![png](IMDB_files/IMDB_18_0.png)
-​    
+<figure class="align-center">
+  <img src="/assets/images/IMDB (1).png" alt="">
+  <figcaption>Rectified Linear Unit Function (ReLU)</figcaption>
+</figure> 
 
 
 For the last layer, since the task at hand is a binary classification (positive/negative) problem, the activation function of choice is the famous sigmoid function: $y = 1/ (1 + e^{-x}) $. The sigmoid function is useful when we wish the output scalar value to be a probability between zero and one, and is therefore one of the most widely used activation functions for the last layer.  
@@ -233,10 +234,10 @@ plt.show()
 ```
 
 
-​    
-![png](IMDB_files/IMDB_20_0.png)
-​    
-
+<figure class="align-center">
+  <img src="/assets/images/IMDB (2).png" alt="">
+  <figcaption>Sigmoid Function</figcaption>
+</figure>
 
 ## Overfitting Issue
 
@@ -384,11 +385,10 @@ plt.show()
 ```
 
 
-​    
-![png](IMDB_files/IMDB_28_0.png)
-​    
-
-
+<figure class="align-center">
+  <img src="/assets/images/IMDB (1).png" alt="">
+  <figcaption>Rectified Linear Unit Function (ReLU)</figcaption>
+</figure> 
 
 ```python
 results = model.evaluate(x_test, y_test)
@@ -396,10 +396,6 @@ results
 ```
 
     782/782 [==============================] - 2s 2ms/step - loss: 0.3018 - accuracy: 0.8807
-
-
-
-
 
     [0.30182182788848877, 0.8807200193405151]
 

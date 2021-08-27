@@ -198,9 +198,7 @@ $$ = \frac{\beta^{\alpha}}{\Gamma(\alpha)} \int_{0}^{\infty} (\frac{\beta^{\alph
 
 $$ = \frac{\beta^{\alpha}}{(\beta-t)^{\alpha}} \cdot \underbrace {\frac{1}{\Gamma(\alpha)} \cdot \int_{0}^{\infty} \beta^{\alpha} \cdot y^{\alpha-1} \cdot e^{-\beta y} \;dy}_{= 1} $$
 
-Since
-
-$$ f(x | \alpha, \beta) := \frac{\beta^{\alpha}}{\Gamma(\alpha)} \cdot x^{\alpha-1} \cdot e^{-\beta x}, \;\;\;\;\; (x\geq0), $$
+Since $ f(x | \alpha, \beta) := \frac{\beta^{\alpha}}{\Gamma(\alpha)} \cdot x^{\alpha-1} \cdot e^{-\beta x}, \;\;\;\;\; (x\geq0), $
 
 $$ \int_{0}^{\infty} f(x | \alpha, \beta) \;dx = \int_{0}^{\infty}\frac{\beta^{\alpha}}{\Gamma(\alpha)} \cdot x^{\alpha-1} \cdot e^{-\beta x} dx = 1 $$
 

@@ -164,7 +164,8 @@ print(len(x_train[0]), "\n")
     10000 
 
 
-​    
+As visible from the code block above, there are 25,000 vectors in the `x_train` numpy array, with 10,000 elements in each of those vectors. The vectors contain only zeroes and ones, with the index of the ones signifying the presence of a specific word in the review with the corresponding index. We thus know that one-hot encoding of `x_train` and `x_test` have been completed, and proceed to do the same with `y_train` and `y_test`.
+   
 
 
 ```python
@@ -264,11 +265,7 @@ $$ CE = - \frac{1}{N} \sum_{i=1}^{N} [y_i \cdot log_2(p(y_i)) + (1-y_i) \cdot lo
 where $y_i$ and $p(y_i)$ are as provided below.  
 
 
-* $ y_i = 
-\begin{cases} 
-1 \;\;\;\;\;\; (C_1) \\
-0 \;\;\;\;\;\; (C_2)
-\end{cases} $
+* $ y_i = \left\{\begin{array}{ll} 1 \;\; (C_1) \\ 0 \;\; (C_2) \end{array} \right. $
 
 * $ p(y_i) = p\;(\;i^{th} \text{ sample $\in C_1$ })$
 * $ 1-p(y_i) = p\;(\; i^{th} \text{ sample $\in C_2$})$ 

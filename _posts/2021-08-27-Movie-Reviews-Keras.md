@@ -263,17 +263,16 @@ $$ CE = - \frac{1}{N} \sum_{i=1}^{N} [y_i \cdot log_2(p(y_i)) + (1-y_i) \cdot lo
 
 where $y_i$ and $p(y_i)$ are as provided below.  
 
-\\
+
 * $ y_i = 
-\begin{cases}
-1 \;\;\;\;\;\; (C_1) \\
+\begin{cases} 
+1 \;\;\;\;\;\; (C_1) 
 0 \;\;\;\;\;\; (C_2)
 \end{cases} $
 
 * $ p(y_i) = p(i^{th} \text{ sample $\in C_1$ })$
 * $ 1-p(y_i) = p(i^{th} \text{ sample $\in C_2$})$ 
 
-\\
 
 This blog post by Daniel Godoy does a good job introducing the concept of binary cross entropy. In his example, the binary classification task attempts to categorize points into two groups: red and green. After doing the cross entropy calculation, it becomes clear that the model that incorrectly assigns high probabilities to data points have higher cross entropy loss scores. On the other hand, models that correctly assign high probabilities to points have lower loss scores. 
 

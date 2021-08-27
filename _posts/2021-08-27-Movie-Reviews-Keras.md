@@ -215,7 +215,7 @@ plt.show()
 
 
 <figure class="align-center">
-  <img src="/assets/images/IMDB (1).png" alt="">
+  <img src="/assets/images/imdb (1).png" alt="">
   <figcaption>Rectified Linear Unit Function (ReLU)</figcaption>
 </figure> 
 
@@ -235,7 +235,7 @@ plt.show()
 
 
 <figure class="align-center">
-  <img src="/assets/images/IMDB (2).png" alt="">
+  <img src="/assets/images/imdb (2).png" alt="">
   <figcaption>Sigmoid Function</figcaption>
 </figure>
 
@@ -364,10 +364,10 @@ plt.show()
 ```
 
 
-​    
-![png](IMDB_files/IMDB_27_0.png)
-​    
-
+<figure class="align-center">
+  <img src="/assets/images/imdb (3).png" alt="">
+  <figcaption>Training and Validation Loss</figcaption>
+</figure> 
 
 
 ```python
@@ -386,8 +386,8 @@ plt.show()
 
 
 <figure class="align-center">
-  <img src="/assets/images/IMDB (1).png" alt="">
-  <figcaption>Rectified Linear Unit Function (ReLU)</figcaption>
+  <img src="/assets/images/imdb (4).png" alt="">
+  <figcaption>Training and Validation Accuracy</figcaption>
 </figure> 
 
 ```python

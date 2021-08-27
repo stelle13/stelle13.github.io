@@ -246,7 +246,8 @@ The more complete picture of the interaction between the input layer and the sof
 
 
 <figure class="align-center">
-  <img src="/assets/images/h1 (4).png" alt="Multi-Class Classification with Softmax">
+  <img src="/assets/images/h1 (4).png" alt="">
+  <figcaption>Multi-Class Classification with Softmax</figcaption>
 </figure> 
 
 

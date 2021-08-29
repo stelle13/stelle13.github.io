@@ -3,7 +3,6 @@ title: "Linear Mapping & Basis Change"
 date: 2021-07-21
 mathjax: true
 toc: true
-toc_sticky: true
 categories:
   - study
 tags:

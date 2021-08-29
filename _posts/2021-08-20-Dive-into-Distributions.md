@@ -148,11 +148,16 @@ $$ \sigma^2 = \lambda, \;\;\; \sigma = \sqrt{\lambda} $$
 
 ## The $\Gamma$ Distribution
 
-### *Definition*
+The definition of a gamma function is as follows: 
+
+*Definition*
 
 $$ \Gamma(x) = \int_0^\infty t^{x-1}e^{-t} dt $$
 
-### *Properties*
+
+With integration by parts, the second property can be proven in less than three lines. And by substituting one in place of $x$, the third property can also be easily shown. With the second and third properties, the first one is then trivial.  
+
+*Properties*
 
 $$ \Gamma(n) = (n-1)! $$
 
@@ -160,7 +165,7 @@ $$ \Gamma(n+1) = n\Gamma(n) $$
 
 $$ \Gamma(1) = 1 $$ 
 
-### *Gamma distribution PDF*
+*Gamma distribution PDF*
 
 Replace x by alpha, t by x from definition.
 
@@ -180,7 +185,7 @@ $$ f(x | \alpha, \beta) = \frac{\beta^{\alpha}}{\Gamma(\alpha)} \cdot x^{\alpha-
 
 $$ f(x | \alpha, \beta) = 0, \;\;\;\;\; (x<0) $$ 
 
-### *Mean, Variance of Gamma Distribution*
+*Mean, Variance of Gamma Distribution*
 
 $$ \lambda = \frac{\alpha}{\beta}, \;\;\;\;\; \sigma^2 = \frac{\alpha}{\beta^2}$$
 
@@ -198,17 +203,19 @@ $$ = \frac{\beta^{\alpha}}{\Gamma(\alpha)} \int_{0}^{\infty} (\frac{\beta^{\alph
 
 $$ = \frac{\beta^{\alpha}}{(\beta-t)^{\alpha}} \cdot \underbrace {\frac{1}{\Gamma(\alpha)} \cdot \int_{0}^{\infty} \beta^{\alpha} \cdot y^{\alpha-1} \cdot e^{-\beta y} \;dy}_{= 1} $$
 
-Since $ f(x | \alpha, \beta) := \frac{\beta^{\alpha}}{\Gamma(\alpha)} \cdot x^{\alpha-1} \cdot e^{-\beta x}, \;\;\;\;\; (x\geq0), $
+Since $$ f(x | \alpha, \beta) := \frac{\beta^{\alpha}}{\Gamma(\alpha)} \cdot x^{\alpha-1} \cdot e^{-\beta x}, \;\;\;\;\; (x\geq0), $$
 
 $$ \int_{0}^{\infty} f(x | \alpha, \beta) \;dx = \int_{0}^{\infty}\frac{\beta^{\alpha}}{\Gamma(\alpha)} \cdot x^{\alpha-1} \cdot e^{-\beta x} dx = 1 $$
 
 $$ \therefore \;M(t) = \frac{\beta^{\alpha}}{(\beta-t)^{\alpha}} $$ 
 
-$$ \therefore \; M'(t) = \frac{\alpha \cdot\beta^{\alpha}}{(\beta-t)^{\alpha+1}}  = \frac{\alpha}{\beta}, \;\;\;\; (\text{with}\;\; t=0) $$
+The rest of the steps then become trivial. 
 
-$$ \therefore \;\; M''(t) = \frac{\alpha \cdot \beta^{\alpha} \cdot (\alpha+1)}{(\beta -t)^{\alpha+2}} = \frac{\alpha(\alpha+1)}{\beta^{2}}, \;\;\;\; (\text{with}\;\; t=0) $$ 
+$$ \; M'(t) = \frac{\alpha \cdot\beta^{\alpha}}{(\beta-t)^{\alpha+1}}  = \frac{\alpha}{\beta}, \;\;\;\; (\text{with}\;\; t=0) $$
 
-$$ \lambda = \frac{\alpha}{\beta}, \;\;\;\;\; \sigma^2 = M''(0) - [M'(0)]^{2} = \frac{\alpha}{\beta^2} $$
+$$ \; M''(t) = \frac{\alpha \cdot \beta^{\alpha} \cdot (\alpha+1)}{(\beta -t)^{\alpha+2}} = \frac{\alpha(\alpha+1)}{\beta^{2}}, \;\;\;\; (\text{with}\;\; t=0) $$ 
+
+$$ \therefore \;\; \lambda = \frac{\alpha}{\beta}, \;\;\;\;\; \sigma^2 = M''(0) - [M'(0)]^{2} = \frac{\alpha}{\beta^2} $$
 
 ## Conclusion
 

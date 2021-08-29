@@ -264,9 +264,7 @@ $$ CE = - \frac{1}{N} \sum_{i=1}^{N} [y_i \cdot log_2(p(y_i)) + (1-y_i) \cdot lo
 
 where $y_i$ and $p(y_i)$ are as provided below.  
 
-
-* $ y_i = \left\{\begin{array}{ll} 1 \;\; (C_1) \\ 0 \;\; (C_2) \end{array} \right. $
-
+* $ y_i = \left\{\begin{array}{ll} 1 \;\; (C_1) \\ 0 \;\; (C_2) \end{array} \right.$
 * $ p(y_i) = p\;(\;i^{th} \text{ sample $\in C_1$ })$
 * $ 1-p(y_i) = p\;(\; i^{th} \text{ sample $\in C_2$})$ 
 

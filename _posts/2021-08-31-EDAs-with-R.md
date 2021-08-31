@@ -72,7 +72,7 @@ ggplot(data = diamonds) +
 
 
 <figure class="align-center">
-  <img src="/assets/images/eda (1).png" alt="">
+  <img src="/assets/images/eda(1).png" alt="">
 </figure> 
 
 
@@ -108,7 +108,7 @@ ggplot(data = diamonds) +
 
 
 <figure class="align-center">
-  <img src="/assets/images/eda (2).png" alt="">
+  <img src="/assets/images/eda(2).png" alt="">
 </figure> 
 
 
@@ -151,7 +151,7 @@ ggplot(data = smaller, mapping = aes(x = carat, color = clarity)) +
 
 
 <figure class="align-center">
-  <img src="/assets/images/eda (3).png" alt="">
+  <img src="/assets/images/eda(3).png" alt="">
 </figure> 
 
 
@@ -169,7 +169,7 @@ ggplot(data = smaller, mapping = aes(x = carat, color = cut)) +
 
 
 <figure class="align-center">
-  <img src="/assets/images/eda (4).png" alt="">
+  <img src="/assets/images/eda(4).png" alt="">
 </figure>   
 
 
@@ -241,7 +241,7 @@ The following example shows the diamonds' distribution of price (continuous), ca
 
 
 <figure class="align-center">
-  <img src="/assets/images/eda (5).png" alt="">
+  <img src="/assets/images/eda(5).png" alt="">
 </figure> 
 
 
@@ -256,7 +256,7 @@ ggplot(diamonds) +
 
 
 <figure class="align-center">
-  <img src="/assets/images/eda (6).png" alt="">
+  <img src="/assets/images/eda(6).png" alt="">
 </figure> 
 
 
@@ -281,7 +281,7 @@ ggplot(
 
 
 <figure class="align-center">
-  <img src="/assets/images/eda (7).png" alt="">
+  <img src="/assets/images/eda(7).png" alt="">
 </figure> 
 
 
@@ -359,7 +359,7 @@ ggplot(data = diamonds, mapping = aes(x = cut, y = price)) +
 
 
 <figure class="align-center">
-  <img src="/assets/images/eda (8).png" alt="">
+  <img src="/assets/images/eda(8).png" alt="">
 </figure>    
 
 
@@ -377,7 +377,7 @@ ggplot(data = diamonds) +
 
 
 <figure class="align-center">
-  <img src="/assets/images/eda (9).png" alt="">
+  <img src="/assets/images/eda(9).png" alt="">
 </figure>   
 
 
@@ -394,7 +394,7 @@ diamonds %>%
 
 
 <figure class="align-center">
-  <img src="/assets/images/eda (10).png" alt="">
+  <img src="/assets/images/eda(10).png" alt="">
 </figure> 
 
 

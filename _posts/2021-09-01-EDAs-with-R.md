@@ -427,9 +427,10 @@ ggplot(data = diamonds) +
 ```
 
 
-​    
-![png](EDAs_files/EDAs_31_0.png)
-​    
+<figure class="align-center">
+  <img src="/assets/images/eda(1).png" alt="">
+</figure> 
+ 
 
 
 
@@ -463,9 +464,9 @@ ggplot(data = diamonds) +
 ```
 
 
-​    
-![png](EDAs_files/EDAs_34_0.png)
-​    
+<figure class="align-center">
+  <img src="/assets/images/eda(2).png" alt="">
+</figure> 
 
 
 
@@ -506,9 +507,10 @@ ggplot(data = smaller, mapping = aes(x = carat, color = clarity)) +
 ```
 
 
-​    
-![png](EDAs_files/EDAs_37_0.png)
-​    
+<figure class="align-center">
+  <img src="/assets/images/eda(3).png" alt="">
+</figure> 
+ 
 
 
 To view multiple distributions over a single variable, one must put multiple histograms over one another, which would obviously be hard to visualize. This is where `geom_freqpoly` comes in--by replacing histograms with lines, visualization is made much easier. 
@@ -524,9 +526,9 @@ ggplot(data = smaller, mapping = aes(x = carat, color = cut)) +
 ```
 
 
-​    
-![png](EDAs_files/EDAs_39_0.png)
-​    
+<figure class="align-center">
+  <img src="/assets/images/eda(4).png" alt="">
+</figure>  
 
 
 ## Replacing Values
@@ -596,9 +598,9 @@ The following example shows the diamonds' distribution of price (continuous), ca
 ```
 
 
-​    
-![png](EDAs_files/EDAs_44_0.png)
-​    
+<figure class="align-center">
+  <img src="/assets/images/eda(5).png" alt="">
+</figure> 
 
 
 In determining the relationship between price and quality, however, one must observe the fact that there are a different number of diamonds per cut category. 
@@ -611,9 +613,9 @@ ggplot(diamonds) +
 ```
 
 
-​    
-![png](EDAs_files/EDAs_46_0.png)
-​    
+<figure class="align-center">
+  <img src="/assets/images/eda(6).png" alt="">
+</figure> 
 
 
 In the above `geom_freqpoly` graph, the y axis is set to be "count", while the x axis is "price". The most visibly striking aspect of the graph is the tall yellow peak at about 1,200 dillars for price. This yellow peak is taller than the other distributions' peaks at about the same price--far taller, in fact. This gives the illusion that the *percentage* of diamonds that occupy that 1,200 peak in price is also far greater for the `ideal` category than it is for the `good` category. 
@@ -636,9 +638,9 @@ ggplot(
 ```
 
 
-​    
-![png](EDAs_files/EDAs_48_0.png)
-​    
+<figure class="align-center">
+  <img src="/assets/images/eda(7).png" alt="">
+</figure> 
 
 
 The graph above, in which the area under each line is the same, suggests that fair-cut diamonds have an average price closer to 2,500 dollars, rather than 1,200 dollars. In fact, it appears as though fair-cut diamonds have the highest mean price among the diamonds of each cut quality.   
@@ -713,10 +715,9 @@ ggplot(data = diamonds, mapping = aes(x = cut, y = price)) +
     geom_boxplot()
 ```
 
-
-​    
-![png](EDAs_files/EDAs_51_0.png)
-​    
+<figure class="align-center">
+  <img src="/assets/images/eda(8).png" alt="">
+</figure>   
 
 
 To order the boxplots in increasing median values, add a `x = reorder()` argument to `mapping = aes()`. 
@@ -732,9 +733,10 @@ ggplot(data = diamonds) +
 ```
 
 
-​    
-![png](EDAs_files/EDAs_53_0.png)
-​    
+<figure class="align-center">
+  <img src="/assets/images/eda(9).png" alt="">
+</figure>   
+
 
 
 To get a more visually striking picture of the distribution of diamonds in terms of cut and color, use a heatmap-like `geom` object called "geom_tile."
@@ -749,9 +751,9 @@ diamonds %>%
 ```
 
 
-​    
-![png](EDAs_files/EDAs_55_0.png)
-​    
+<figure class="align-center">
+  <img src="/assets/images/eda(10).png" alt="">
+</figure> 
 
 
 From the `geom_tile` diagram above, it appears as though ideal-cut diamonds with color G are the majority, followed by the diamonds in the adjacent cut categories, and finally the fair-cut diamonds. 

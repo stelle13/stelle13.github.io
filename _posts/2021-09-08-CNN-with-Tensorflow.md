@@ -28,7 +28,7 @@ This blog post documents my first attempt at learning about convolutional neural
 The diagram below encapsulates the various design elements of a convolutional neural network, hereinafter referred to as simply "cnn." This diagram, which was taken from a 2019 paper by Tabian, Fu, and Khodaei [published](https://www.mdpi.com/1424-8220/19/22/4933#cite) on MDPI, is under the Creative Commons Attribution License, and the reference for the paper is provided below.  
 
 <figure class="align-center">
-  <img src="/assets/images/cnn(1).png" alt="">
+  <img src="/assets/images/cnn(1).PNG" alt="">
   <figcaption>Structure of CNN</figcaption>
 </figure> 
 
@@ -242,15 +242,7 @@ plt.plot(epochs, loss, 'r', "Training Loss")
 plt.plot(epochs, val_loss, 'b', "Validation Loss")
 plt.figure()
 
-
-# Desired output. Charts with training and validation metrics. No crash :)
 ```
-
-
-
-
-    <Figure size 432x288 with 0 Axes>
-
 
 
 
@@ -268,8 +260,6 @@ plt.figure()
 </figure>     
 
 
-
-    <Figure size 432x288 with 0 Axes>
 
 
 ## References:

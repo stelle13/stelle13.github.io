@@ -13,19 +13,27 @@ tags:
 
 In this post, I will cover my first attempt at learning about convolutional neural networks. 
 
+
 ## Convolutional Neural Networks
 
-This blog post references a couple of sources, including several blog posts by [Toward Data Science](https://towardsdatascience.com/applied-deep-learning-part-4-convolutional-neural-networks-584bc134c1e2) and [Medium](https://medium.datadriveninvestor.com/convolutional-neural-network-cnn-simplified-ecafd4ee52c5), as well as Stanford's [CS230](https://stanford.edu/~shervine/teaching/cs-230/cheatsheet-convolutional-neural-networks) course website and François Chollet's *Deep Learning with Python*. 
+This blog post documents my first attempt at learning about convolutional neural networks, and is by no means a comprehensive guide on the topic. For more information, the following sources provide more detailed explanations. 
+
+* Blog post on CNN by [Toward Data Science](https://towardsdatascience.com/applied-deep-learning-part-4-convolutional-neural-networks-584bc134c1e2) 
+* Similar post by [Medium](https://medium.datadriveninvestor.com/convolutional-neural-network-cnn-simplified-ecafd4ee52c5)
+* CNN cheatsheet by Stanford's [CS230](https://stanford.edu/~shervine/teaching/cs-230/cheatsheet-convolutional-neural-networks) 
+* François Chollet's *Deep Learning with Python*. 
 
 ## Structure
 
-The diagram below encapsulates the various design elements of a convolutional neural network, hereinafter referred to as simply "cnn." 
+The diagram below encapsulates the various design elements of a convolutional neural network, hereinafter referred to as simply "cnn." This diagram, which was taken from a 2019 paper by Tabian, Fu, and Khodaei [published](https://www.mdpi.com/1424-8220/19/22/4933#cite) on MDPI, is under the Creative Commons Attribution License, and the reference for the paper is provided below.  
 
-The inner workings of a cnn can be described as essentially a two-step process, with multiple layers in each of the steps. The two steps are feature learning and classification, and 
+<figure class="align-center">
+  <img src="/assets/images/cnn(1).PNG" alt="">
+  <figcaption>Structure of CNN</figcaption>
+</figure> 
 
-Apply filters/kernels to get feature maps. 
 
-
+The inner workings of a cnn can be described as essentially a two-step process, with multiple layers in each of the steps. The two steps are feature learning and classification, with Conv2D and pooling layers in feature learning, and flatten, dense, and activation layers in classification. 
 
 * Feature Learning
   * Convolution layer (Conv)
@@ -60,6 +68,20 @@ After applying ReLu to the initial feature map, use pooling methods to reduce th
 Pooling provides several benefits, including reducing overfitting and providing translation invariance. Translation invariance refers to classifying images with little regard to the spatial orientation of the object within an image. For example, the images below are of the same cat, but the cats are oriented differently. Nonetheless, pooling allows the model to correctly classify all four images as cats, since pooling reduces the difference between the feature maps of images with differently oriented objects. Pooling also helps with reducing overfitting, since it reduces the number of parameters. 
 
 
+
+<figure class="third">
+	<img src="/assets/images/cnn(2).png" alt="">
+	<img src="/assets/images/cnn(3).png" alt="">
+	<img src="/assets/images/cnn(4).png" alt="">
+  <img src="/assets/images/cnn(5).png" alt="">
+	<figcaption>Cats in Different Orientations</figcaption>
+</figure>
+
+
+
+
+
+
 ### Flattening
 
 Flattening is essentially reducing the dimension of the pooling layer's output, which is a three-dimensional tensor, or a stack of two-dimensional matrices. Since the `Dense` layer can only receive one-dimensional vectors as inputs, the flattening layer converts the 3D tensor output to the 1D vector input. This process is a lot easier to understand in terms of pictures than words, and this [diagram](https://www.researchgate.net/figure/Conversion-of-convoluted-layer-to-flatten-layer_fig5_336320439) does an excellent job demonstrating what the flattening layer does. 
@@ -70,7 +92,7 @@ Since the task at hand is binary classification, the last layer should properly 
 
 ## Cats vs Dogs 
 
-The code blocks below were borrowed from one of Tensorflow's online tutorials on [convolutional neural networks](https://www.youtube.com/watch?v=u2TjZzNuly8&list=RDCMUC0rqucBdTuFTjJiefW5t-IQ&index=15&ab_channel=TensorFlow), which is under a Creative Commons . The dataset import and the train-test-split steps are not shown below for brevity, but the 25,000 images in the dataset were split into train and test sets, with 22,500 and 2,500 images in each. In the 22,500 images belonging to the train set, there were 11,250 images of dogs and the same number of images for cats. Meanwhile, in the 2,500 images reserved for the test set, there were 1,250 images of cats, and the same number for dogs. 
+The code blocks below were borrowed from one of Tensorflow's online tutorials on [convolutional neural networks](https://www.youtube.com/watch?v=u2TjZzNuly8&list=RDCMUC0rqucBdTuFTjJiefW5t-IQ&index=15&ab_channel=TensorFlow), which is under public domain via a Creative Commons license. The dataset import and the train-test-split steps are not shown below for brevity, but the 25,000 images in the dataset were split into train and test sets, with 22,500 and 2,500 images in each. In the 22,500 images belonging to the train set, there were 11,250 images of dogs and the same number of images for cats. Meanwhile, in the 2,500 images reserved for the test set, there were 1,250 images of cats, and the same number for dogs. 
 
 
 
@@ -220,29 +242,26 @@ plt.plot(epochs, loss, 'r', "Training Loss")
 plt.plot(epochs, val_loss, 'b', "Validation Loss")
 plt.figure()
 
-
-# Desired output. Charts with training and validation metrics. No crash :)
 ```
 
 
 
-
-    <Figure size 432x288 with 0 Axes>
-
-
-
-
-​    
-![png](cnn_files/cnn_15_1.png)
-​    
+<figure class="align-center">
+  <img src="/assets/images/cnn(8).png" alt="">
+  <figcaption>Validation Accuracy per Epoch</figcaption>
+</figure>    
 
 
 
 
-![png](cnn_files/cnn_15_2.png)
-    
+<figure class="align-center">
+  <img src="/assets/images/cnn(7).png" alt="">
+  <figcaption>Validation Loss per Epoch</figcaption>
+</figure>     
 
 
 
-    <Figure size 432x288 with 0 Axes>
 
+## References:
+
+Tabian, I.; Fu, H.; Sharif Khodaei, Z. A Convolutional Neural Network for Impact Detection and Characterization of Complex Composite Structures. Sensors 2019, 19, 4933. https://doi.org/10.3390/s19224933

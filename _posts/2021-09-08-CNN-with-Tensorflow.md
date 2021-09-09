@@ -75,7 +75,7 @@ Pooling provides several benefits, including reducing overfitting and providing 
 	<img src="/assets/images/cnn(4).png" alt="">
   	<img src="/assets/images/cnn(5).png" alt="">
 	<img src="/assets/images/cnn(6).png" alt="">
-	<img src="/assets/images/cnn(6-1).png" alt="">
+	<img src="/assets/images/cnn(10).png" alt="">
 	<figcaption>Cats in Different Orientations</figcaption>
 </figure>
 
@@ -97,15 +97,15 @@ Since the task at hand is binary classification, the last layer should properly 
 The code blocks below were borrowed from one of Tensorflow's online tutorials on [convolutional neural networks](https://www.youtube.com/watch?v=u2TjZzNuly8&list=RDCMUC0rqucBdTuFTjJiefW5t-IQ&index=15&ab_channel=TensorFlow), which is under public domain via a Creative Commons license. The dataset import and the train-test-split steps are not shown below for brevity, but the 25,000 images in the dataset were split into train and test sets, with 22,500 and 2,500 images in each. In the 22,500 images belonging to the train set, there were 11,250 images of dogs and the same number of images for cats. Meanwhile, in the 2,500 images reserved for the test set, there were 1,250 images of cats, and the same number for dogs. The nine images below show some of the pictures in the dataset provided by [Kaggle](https://www.kaggle.com/c/dogs-vs-cats/data). 
 
 <figure class="third">
-	<img src="/assets/images/cat.1.png" alt="">
-	<img src="/assets/images/cat.2.png" alt="">
-	<img src="/assets/images/cat.3.png" alt="">
-  	<img src="/assets/images/cat.4.png" alt="">
-	<img src="/assets/images/cat.14.png" alt="">
-	<img src="/assets/images/dog.6226.png" alt="">
-	<img src="/assets/images/dog.6227.png" alt="">
-	<img src="/assets/images/dog.6228.png" alt="">
-	<img src="/assets/images/dog.6229.png" alt="">
+	<img src="/assets/images/cat.1.jpg" alt="">
+	<img src="/assets/images/cat.2.jpg" alt="">
+	<img src="/assets/images/cat.3.jpg" alt="">
+  	<img src="/assets/images/cat.4.jpg" alt="">
+	<img src="/assets/images/cat.14.jpg" alt="">
+	<img src="/assets/images/dog.6226.jpg" alt="">
+	<img src="/assets/images/dog.6227.jpg" alt="">
+	<img src="/assets/images/dog.6228.jpg" alt="">
+	<img src="/assets/images/dog.6229.jpg" alt="">
 	<figcaption>Cats and Dogs, image set provided by Kaggle</figcaption>
 </figure>
 

@@ -146,6 +146,60 @@ With some basic algebra,
 
 $$ \sigma^2 = \lambda, \;\;\; \sigma = \sqrt{\lambda} $$
 
+
+```python
+import matplotlib.pyplot as plt
+import numpy as np
+import math
+
+x = np.linspace(-5, 5, 1000)
+# y = 1 / (1 + np.e**(-x))
+# mu = 0
+# sigma = 1
+# normal: y = 1 / (sigma * np.sqrt(2*np.pi)) * np.e**(-0.5*((x-mu)/sigma)**2)
+
+lambdaP = 4
+lambdaP2 = 10
+lambdaP3 = 20
+
+k = np.linspace(0, 40, 41) # k = np.ndarray
+kList = list(k)
+newK = list()
+
+for i in kList:
+  newK.append(math.factorial(int(i)))
+# print(newK)
+newKNP = np.asarray(newK)
+# type(newKNP) # np.ndarray
+ 
+y = (lambdaP**k) * (np.e**(-lambdaP)) / newKNP 
+y2 = (lambdaP2**k) * (np.e**(-lambdaP2)) / newKNP 
+y3 = (lambdaP3**k) * (np.e**(-lambdaP3)) / newKNP 
+
+# type(y)
+plt.plot(k.tolist(), y.tolist())
+plt.plot(k.tolist(), y2.tolist())
+plt.plot(k.tolist(), y3.tolist())
+
+plt.legend(["lambda = 4", "lambda = 10", "lambda = 20"])
+plt.title("Poisson Distributions")
+
+# also works, but generates two separate plots
+# fig, ax = plt.subplots()
+# ax.plot(k,y)
+
+# fig, ax2 = plt.subplots()
+# ax2.plot(k,y2)
+ 
+```
+
+<figure class="align-center">
+  <img src="/assets/images/poisson.png" alt="">
+  <figcaption>Poisson Distributions with Different Lambdas</figcaption>
+</figure> 
+
+
+
 ## The $\Gamma$ Distribution
 
 The definition of a gamma function is as follows: 

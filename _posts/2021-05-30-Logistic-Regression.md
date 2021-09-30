@@ -157,9 +157,11 @@ $$\theta_j := \theta_j - \alpha(h_\theta(x^{(i)})- y^{(i)})x_j^{(i)}$$
 
 Now that we have briefly looked at linear regression, let's take a look at logistic regression.  
 
-Logistic regression is a type of classifier, and not a regression algorithm. This is because logistic regression plugs in the dot product between weight and sample vectors into a special function, called the logistic function. The output of this logistic function is always between zero and one, ensuring that this output can be interpreted as the probability of a certain sample belonging to a particular class. The logistic function's simple formula and graph are as follows. 
+Logistic regression is a type of classifier, and not a regression algorithm. This is because logistic regression plugs in the dot product between weight and sample vectors into a special function called the logistic (or sigmoid) function, shown below.  
 
 $$ y = \frac{1}{1+e^{-x}}$$
+
+The output of this logistic function is always between zero and one, ensuring that this output can be interpreted as the probability of a certain sample belonging to a particular class. The logistic function's simple graph is as follows. 
 
 
 ```python
@@ -177,14 +179,6 @@ ax.plot(x,y)
  
 ```
 
-
-
-
-    [<matplotlib.lines.Line2D at 0x7f280eb2db50>]
-
-
-
-
 ​    
 <figure class="align-center">
   <img src="/assets/images/LR.png" alt="">
@@ -192,13 +186,13 @@ ax.plot(x,y)
 </figure> 
 ​    
 
-
 For $g(x)$ defined as the logistic (or sigmoid) function, we define $h_\theta(\vec{x})$ as the logistic function with $\theta^\top \cdot \vec{x}$ as the input value. Here, we note that $h_\theta(\vec{x})$ is $g(\theta^\top \cdot \vec{x})$, whereas in linear regression, $h_\theta(\vec{x})$ was simply $\theta^\top \cdot \vec{x}$.
 
 $$h_\theta(\vec{x}) = g(\theta^\top \cdot \vec{x}) = \frac{1}{1+e^{-\theta^\top\vec{x}}}$$
 
 
 Now, given a list of vectors $\vec{x}^{(1)}$, $\vec{x}^{(2)} ... \vec{x}^{(m)}$, define $X$ as the design matrix containing the list of vectors in its rows. Then the **likelihood** of seeing $\vec{y}$ as the target value vector when given $X$ and weight parameter vector $\vec{\theta}$ can be expressed as: 
+
 $$ L(\vec{\theta}) = P(\vec{y} \;|\; X ;\theta)$$. 
 
 If we assume that the training examples and their target values are independent from each other, the likelihood of seeing $\vec{y}$ for 
@@ -224,7 +218,7 @@ Since $l(\theta) = log \; L(\theta)$, simply substitute the expression for $L(\t
 $$l(\theta) = log \; L(\theta) = log \; \prod_{i=1}^{m} p(y^{(i)} \;|\; \vec{x}^{(i)};\vec{\theta})$$
 
 
-Since we defined $ h_\theta(\vec{x})$ as the probability that we would see $y = 1$ as the label when given sample vector $\vec{x}$ (and hence logistic regression), we can rewrite $p(y^{(i)} \;|\; \vec{x}^{(i)};\vec{\theta})$ into this form. 
+Since we defined $h_\theta(\vec{x})$ as the probability that we would see $y = 1$ as the label if given sample vector $\vec{x}$ (and hence logistic regression), we can rewrite $p(y^{(i)}|\vec{x}^{(i)};\vec{\theta})$ into this form. 
 
 
 $$ p(y^{(i)} \;|\; \vec{x}^{(i)};\vec{\theta}) = (h_\theta(\vec{x}))^{y^{(i)}} (1-h_\theta(\vec{x}))^{1-y^{(i)}} $$ 

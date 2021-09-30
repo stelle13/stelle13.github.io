@@ -11,7 +11,7 @@ tags:
 
 
 
-In this post, I will go over the "hello world" of machine learning--logistic regression. 
+In this post, I will go over the "hello world" of machine learning--logistic regression. This post references Andrew Ng's 2020 [lecture](https://www.youtube.com/watch?v=jGwO_UgTS7I&t=3755s&ab_channel=stanfordonline) on machine learning, available on Youtube's [StanfordOnline](https://www.youtube.com/user/stanfordonline/featured) channel. 
 
 
 

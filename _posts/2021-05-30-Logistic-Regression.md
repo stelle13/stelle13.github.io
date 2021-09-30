@@ -198,7 +198,11 @@ For $g(x)$ defined as the logistic (or sigmoid) function, we define $h_\theta(\v
 $$h_\theta(\vec{x}) = g(\theta^\top \cdot \vec{x}) = \frac{1}{1+e^{-\theta^\top\vec{x}}}$$
 
 
-Now, given a list of vectors $\vec{x}^{(1)}$, $\vec{x}^{(2)}$ ... $\vec{x}^{(m)}$, define $X$ as the design matrix containing the list of vectors in its rows. Then the **likelihood** of seeing $\vec{y}$ as the target value vector when given $X$ and weight parameter vector $\vec{\theta}$ can be expressed as $L(\vec{\theta}) = P(\vec{y} \;|\; X ;\theta)$. If we assume that the training examples and their target values are independent from each other, the likelihood of seeing $\vec{y}$ for $\vec{x}^{(1)}$, $\vec{x}^{(2)}$ ... $\vec{x}^{(m)}$ is the product of individual likelihoods. That is, 
+Now, given a list of vectors $\vec{x}^{(1)}$, $\vec{x}^{(2)} ... \vec{x}^{(m)}$, define $X$ as the design matrix containing the list of vectors in its rows. Then the **likelihood** of seeing $\vec{y}$ as the target value vector when given $X$ and weight parameter vector $\vec{\theta}$ can be expressed as: 
+$$ L(\vec{\theta}) = P(\vec{y} \;|\; X ;\theta)$$. 
+
+If we assume that the training examples and their target values are independent from each other, the likelihood of seeing $\vec{y}$ for 
+$\vec{x}^{(1)}$, $\vec{x}^{(2)}$ ... $\vec{x}^{(m)}$ is the product of individual likelihoods. That is, 
 
 $$L(\vec{\theta}) = P(\vec{y} \;|\; X;\theta) = \prod_{i=1}^{m} p(y^{(i)} \;|\; \vec{x}^{(i)};\vec{\theta})$$
 

@@ -186,7 +186,10 @@ ax.plot(x,y)
 
 
 ​    
-![png](LR_files/LR_33_1.png)
+<figure class="align-center">
+  <img src="/assets/images/LR.png" alt="">
+  <figcaption>Logistic / Sigmoid Function</figcaption>
+</figure> 
 ​    
 
 
@@ -195,7 +198,7 @@ For $g(x)$ defined as the logistic (or sigmoid) function, we define $h_\theta(\v
 $$h_\theta(\vec{x}) = g(\theta^\top \cdot \vec{x}) = \frac{1}{1+e^{-\theta^\top\vec{x}}}$$
 
 
-Now, given a list of vectors $\vec{x}^{(1)}$, $\vec{x}^{(2)}$ ... $\vec{x}^{(m)}$, define $X$ as the design matrix containing the list of vectors in its rows. Then the **likelihood** of seeing $\vec{y}$ as the target value vector when given $X$ and weight parameter vector $\vec{\theta}$ can be expressed as $L(\vec{\theta}) = P(\vec{y} \;|\; X ;\theta)$. If we assume that the training examples and their target values are independent from each other, the likelihood of seeing $\vec{y} = [y_1, y_2, ... y_m]$ for $\vec{x}^{(1)}$, $\vec{x}^{(2)}$ ... $\vec{x}^{(m)}$ is the product of individual likelihoods. That is, 
+Now, given a list of vectors $\vec{x}^{(1)}$, $\vec{x}^{(2)}$ ... $\vec{x}^{(m)}$, define $X$ as the design matrix containing the list of vectors in its rows. Then the **likelihood** of seeing $\vec{y}$ as the target value vector when given $X$ and weight parameter vector $\vec{\theta}$ can be expressed as $L(\vec{\theta}) = P(\vec{y} \;|\; X ;\theta)$. If we assume that the training examples and their target values are independent from each other, the likelihood of seeing $\vec{y}$ for $\vec{x}^{(1)}$, $\vec{x}^{(2)}$ ... $\vec{x}^{(m)}$ is the product of individual likelihoods. That is, 
 
 $$L(\vec{\theta}) = P(\vec{y} \;|\; X;\theta) = \prod_{i=1}^{m} p(y^{(i)} \;|\; \vec{x}^{(i)};\vec{\theta})$$
 
@@ -210,13 +213,18 @@ In logistic regression, however, we are trying to find the global maximum of the
 
 $$ \theta_j := \theta_j + \alpha \cdot [\frac{\partial}{\partial\theta_j} l(\theta)] \;\;\;\;\text{for $\alpha > 0$} $$
 
+
 Since $l(\theta) = log \; L(\theta)$, simply substitute the expression for $L(\theta)$ to arrive at the following result.
+
 
 $$l(\theta) = log \; L(\theta) = log \; \prod_{i=1}^{m} p(y^{(i)} \;|\; \vec{x}^{(i)};\vec{\theta})$$
 
-Since we defined $ h_\theta(\vec{x}) $ as the probability that we would see $y = 1$ as the label when given sample vector $\vec{x}$ (and hence logistic regression), we can rewrite $ p(y^{(i)} \;|\; \vec{x}^{(i)};\vec{\theta})$ into this form. 
+
+Since we defined $ h_\theta(\vec{x})$ as the probability that we would see $y = 1$ as the label when given sample vector $\vec{x}$ (and hence logistic regression), we can rewrite $p(y^{(i)} \;|\; \vec{x}^{(i)};\vec{\theta})$ into this form. 
+
 
 $$ p(y^{(i)} \;|\; \vec{x}^{(i)};\vec{\theta}) = (h_\theta(\vec{x}))^{y^{(i)}} (1-h_\theta(\vec{x}))^{1-y^{(i)}} $$ 
+
 
 Plug this expression inside the product notation, and derive with respect to $ \theta_j$ to get $[\frac{\partial}{\partial\theta_j} l(\theta)]$. We can then use the resulting expression to find the update rule for logistic regression. The complete list of steps in terms of the math is too extensive to belong within this blog post, but the point here is that logistic regression's weight update rule takes a similar form to that of linear regression. For more detailed explanation of the steps involved, professor Andrew Ng's [CS229 notes](https://web.archive.org/web/20180618211933/http://cs229.stanford.edu/notes/cs229-notes1.pdf) contain a step-by-step guide that walks the reader through the math. 
 
@@ -239,37 +247,8 @@ cancerData = load_breast_cancer()
 import pandas as pd
 
 
-columnList = ["radius",
-           "texture", 
-           "perimeter",
-           "area",
-           "smoothness",
-           "compactness",
-           "concavity",
-           "concave points",
-           "symmetry",
-           "fractal dimension",
-           "radius (std error)",
-           "texture (std error)", 
-           "perimeter (std error)",
-           "area (std error)",
-           "smoothness (std error)",
-           "compactness (std error)",
-           "concavity (std error)",
-           "concave points (std error)",
-           "symmetry (std error)",
-           "fractal dimension (std error)",
-           "radius (worst)",
-           "texture (worst)", 
-           "perimeter (worst)",
-           "area (worst)",
-           "smoothness (worst)",
-           "compactness (worst)",
-           "concavity (worst)",
-           "concave points (worst)",
-           "symmetry (worst)",
-           "fractal dimension (worst)",
-           "result"]
+columnList = ["radius","texture", "perimeter","area","smoothness","compactness","concavity","concave points","symmetry","fractal dimension","radius (std error)","texture (std error)", "perimeter (std error)","area (std error)","smoothness (std error)","compactness (std error)","concavity (std error)","concave points (std error)","symmetry (std error)","fractal dimension (std error)","radius (worst)","texture (worst)", "perimeter (worst)","area (worst)","smoothness (worst)","compactness (worst)","concavity (worst)",
+"concave points (worst)","symmetry (worst)","fractal dimension (worst)","result"]
 
 
 # print(cancerData.data)

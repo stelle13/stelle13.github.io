@@ -100,7 +100,7 @@ author:
   name             : "Junhyung Park"
   avatar           : "/assets/images/Path.jpg"
   bio              : "A Passionate Student. Always Striving to Become a Person of Value."
-  location         : "Incheon, South Korea"
+  location         : "South Korea"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"

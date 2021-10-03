@@ -70,12 +70,9 @@ Pooling provides several benefits, including reducing overfitting and providing 
 
 
 <figure class="third">
-	<img src="/assets/images/cnn(2).png" alt="">
-	<img src="/assets/images/cnn(3).png" alt="">
-	<img src="/assets/images/cnn(4).png" alt="">
-  	<img src="/assets/images/cnn(5).png" alt="">
-	<img src="/assets/images/cnn(6).png" alt="">
-	<img src="/assets/images/cnn(10).png" alt="">
+	<img src="/assets/images/catA.png" alt="">
+	<img src="/assets/images/catB.png" alt="">
+	<img src="/assets/images/catC.png" alt="">
 	<figcaption>Cats in Different Orientations</figcaption>
 </figure>
 

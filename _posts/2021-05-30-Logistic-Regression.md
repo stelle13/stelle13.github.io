@@ -220,10 +220,7 @@ $$l(\theta) = log \; L(\theta) = log \; \prod_{i=1}^{m} p(y^{(i)} \;|\; \vec{x}^
 
 Since we defined $h_\theta(\vec{x})$ as the probability that we would see $y = 1$ as the label if given sample vector $\vec{x}$ (and hence logistic regression), we can rewrite the following expression into a different form.  
 
-
-$$p(y^{(i)} | \;\; \vec{x}^{(i)};\vec{\theta})$$
-
-
+ 
 $$ p(y^{(i)} \;|\; \vec{x}^{(i)};\vec{\theta}) = (h_\theta(\vec{x}))^{y^{(i)}} (1-h_\theta(\vec{x}))^{1-y^{(i)}} $$ 
 
 

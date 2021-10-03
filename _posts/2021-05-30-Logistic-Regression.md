@@ -122,7 +122,7 @@ $$\frac{1}{2} \big(h_\theta(\vec{x}^{(i)})-y^{(i)}\big)^{2} \;\;\; \text{for} \;
 
 Partially differentiating this expression with respect to $\theta_j$ would get us the following result:
 
-$$ \frac{\partial}{\partial\theta_j} \big[\frac{1}{2} \{h_\theta(\vec{x}^{(i)})-y^{(i)}\}^{2}\big] =  \big[h_\theta(\vec{x}^{(i)})-y^{(i)}\big] \cdot x_j^{(i)} \;\;\;\;\;\;\;\;\; \mathbf{(*)}$$ 
+$$ \frac{\partial}{\partial\theta_j} \big[\frac{1}{2} \{h_\theta(\vec{x}^{(i)})-y^{(i)}\}^{2}\big] =  \big[h_\theta(\vec{x}^{(i)})-y^{(i)}\big] \cdot x_j^{(i)} \;\;\;\;\;\;\;\;\; \tag{1} $$ 
 
 Therefore, going back to the LMS update rule above, we see that the expression inside the brackets can be put as the followng: 
 
@@ -132,7 +132,7 @@ Since partial differentiating after the summation is the same as summing the **a
 
 $$ = \sum_{i=1}^{m} \frac{\partial}{\partial\theta_j} \big[ \frac{1}{2} (h_\theta(x^{(i)}) - y^{(i)})^2 \big]  $$
 
-And the expression inside the summation is simply what we previously got with the equation marked by the **(*) sign.** 
+And the expression inside the summation is simply what we previously got with the equation labeled as (1). 
 
 Therefore, 
 
@@ -191,9 +191,9 @@ For $g(x)$ defined as the logistic (or sigmoid) function, we define $h_\theta(\v
 $$h_\theta(\vec{x}) = g(\theta^\top \cdot \vec{x}) = \frac{1}{1+e^{-\theta^\top\vec{x}}}$$
 
 
-Now, given a list of vectors $\vec{x}^{(1)}$, $\vec{x}^{(2)} ... \vec{x}^{(m)}$, define $X$ as the design matrix containing the list of vectors in its rows. Then the **likelihood** of seeing $\vec{y}$ as the target value vector when given $X$ and weight parameter vector $\vec{\theta}$ can be expressed as: 
+Now, given a list of vectors $\vec{x}^{(1)}$, $\vec{x}^{(2)} ... \vec{x}^{(m)}$, define $X$ as the design matrix containing the list of vectors in its rows. Then the **likelihood** of seeing $\vec{y}$ as the target value vector when given $X$ and weight parameter vector $\vec{\theta}$ can be expressed in the following form.  
 
-$$ L(\vec{\theta}) = P(\vec{y} \;|\; X ;\theta)$$. 
+$$ L(\vec{\theta}) = P(\vec{y}|X ;\theta) $$ 
 
 If we assume that the training examples and their target values are independent from each other, the likelihood of seeing $\vec{y}$ for 
 $\vec{x}^{(1)}$, $\vec{x}^{(2)}$ ... $\vec{x}^{(m)}$ is the product of individual likelihoods. That is, 
@@ -218,9 +218,10 @@ Since $l(\theta) = log \; L(\theta)$, simply substitute the expression for $L(\t
 $$l(\theta) = log \; L(\theta) = log \; \prod_{i=1}^{m} p(y^{(i)} \;|\; \vec{x}^{(i)};\vec{\theta})$$
 
 
-Since we defined $h_\theta(\vec{x})$ as the probability that we would see $y = 1$ as the label if given sample vector $\vec{x}$ (and hence logistic regression), we can rewrite 
+Since we defined $h_\theta(\vec{x})$ as the probability that we would see $y = 1$ as the label if given sample vector $\vec{x}$ (and hence logistic regression), we can rewrite the following expression into a different form.  
 
-$$p(y^{(i)} | \;\; \vec{x}^{(i)};\vec{\theta})$$ into this form: 
+
+$$p(y^{(i)} | \;\; \vec{x}^{(i)};\vec{\theta})$$
 
 
 $$ p(y^{(i)} \;|\; \vec{x}^{(i)};\vec{\theta}) = (h_\theta(\vec{x}))^{y^{(i)}} (1-h_\theta(\vec{x}))^{1-y^{(i)}} $$ 

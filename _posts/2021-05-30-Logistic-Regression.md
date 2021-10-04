@@ -148,7 +148,7 @@ $$ \theta_j := \theta_j - \alpha \cdot [\sum_{i=1}^{m} \{h_\theta(\vec{x}^{(i)})
 
 This expression is the LMS update rule for **batch gradient descent**, where we look at every sample (row) to update the weight parameter (column), once. 
 
-For **stochastic gradient descend**, we simply remove the summation sign from the above equation and choose a random sample $x^{(i)}$ to update the parameter $\theta_j$.
+For **stochastic gradient descent**, we simply remove the summation sign from the above equation and choose a random sample $x^{(i)}$ to update the parameter $\theta_j$.
 
 
 $$\theta_j := \theta_j - \alpha(h_\theta(x^{(i)})- y^{(i)})x_j^{(i)}$$

@@ -22,6 +22,11 @@ There are largely two subfields of NLP with rather self-explanatory names: natur
 
 Even though the two are distinct fields, to perform NLG or NLU, there needs to be some common, systematic way to analyze the human language. This analysis consists of several phases, such as morphological, syntax, semantic, and pragmatic analysis. (Chopra et al, 2013)
 
++ morphological analysis
++ syntax analysis
++ semantic analysis
++ pragmatic analysis
+
 The specifics of those phases are too extensive to include in one blog post, and there are a plethora of research materials in the NLP field. For such reasons, this post will focus specifically on a rather simple task: topic identification. 
 
 The text data that is used in this post comes from the `inaugural` dataset provided by the `nltk` library. The dataset contains information about the inaugural speeches of past U.S. presidents, from Washington to Trump. This post, however, will focus on two of those speeches: the 2005 speech by president Bush and the 2009 speech by president Obama. 

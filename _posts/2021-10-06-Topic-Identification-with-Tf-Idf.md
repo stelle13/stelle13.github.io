@@ -272,20 +272,21 @@ To illustrate tf-idf in action, let's go back to the example of the astronomy pa
 | :---        |    :----:   |:----:  |:----:  | ---: |
 | $t \times 100 $ | $t \times 1 $ | $t \times 0 $   | ... | $t \times 0 $|
 
-Using the formulas above, we can get the values of $\text{tf-idf}_{\;t,d_1}$ and $\text{tf-idf}_{\;t,d_1}$. If papers three to one hundred do not contain the word "Jupiter," then the first paper would have a high value for $\text{tf-idf}_{\;t,d_1}$, whereas the other papers would have a low value or a zero. 
+Using the formulas above, we can get values for these two expressions: $\text{tf-idf}_{t,d_1} \text{ , } \text{tf-idf}_{t,d_1}$. 
 
+If papers three to one hundred do not contain the word "Jupiter," then the first paper would have a high value for $\text{tf-idf}_{t,d_1}$.
+
+Meanwhile, the other papers would have a low value or a zero. 
 
 $$  \text{tf-idf}_{\;t,d_1} = 100 \cdot log \; (\frac{100}{2}) $$ 
+
 $$  \text{tf-idf}_{\;t,d_2} = 1 \cdot log \; (\frac{100}{2}) $$ 
 
 Therefore, if we search for "Jupiter" among the collection of one hundred papers, the first paper, which has the highest $\text{tf-idf}$ score for the word "Jupiter," would come up. 
 
-
-
-
 If searching for many words, we could use the tf-idf weighting scheme to score documents with respect to a collection of words (denoted as $q$). In this case, we could simply find the highest-scoring document by adding up the invidividual tf-idf weights.  
 
-$$ \text{Score} \;(q,d) = \sum_{t \;\in\; q}  \text{tf-idf}_{\;t,d}   $$ 
+$$ \text{Score} \;(q,d) = \sum_{t \;\in\; q}  \text{tf-idf}_{\;t,d} $$ 
 
 In other words, simply sum up the individual tf-idf weights for each word in the collection. 
 

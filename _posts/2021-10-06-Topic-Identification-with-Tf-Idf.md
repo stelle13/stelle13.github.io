@@ -272,7 +272,7 @@ To illustrate tf-idf in action, let's go back to the example of the astronomy pa
 | :---        |    :----:   |:----:  |:----:  | ---: |
 | $t \times 100 $ | $t \times 1 $ | $t \times 0 $   | ... | $t \times 0 $|
 
-Using the formulas above, we can get values for these two expressions: $\text{tf-idf}_{t,d_1} \text{ , } \text{tf-idf}_{t,d_1}$. 
+Using the formulas above, we can get values for these two expressions: $\text{tf-idf}_{t,d_1}$ , $\text{tf-idf}_{t,d_1}$. 
 
 If papers three to one hundred do not contain the word "Jupiter," then the first paper would have a high value for $\text{tf-idf}_{t,d_1}$.
 
@@ -421,16 +421,12 @@ for word, weight in weights2[:5]:
     <class 'list'>
     [(757, 0.03653920476209348), (758, 0.03653920476209348), (759, 0.07307840952418695), (760, 0.03653920476209348), ... (1142, 0.03653920476209348)]
 
-
-​    
     child 0.16045763595141999
     spirit 0.16045763595141999
     crisis 0.128366108761136
     job 0.128366108761136
     meet 0.128366108761136
-
-
-​    
+    
     human 0.2192352285725609
     justice 0.1826960238104674
     Liberty 0.1461568190483739
@@ -438,22 +434,18 @@ for word, weight in weights2[:5]:
     tyranny 0.1461568190483739
 
 
+# Analysis
 
 Now that we have the tf-idf weights, let's try to interpret the speeches in the context of the words with the highest weights. 
 
-If we take a look at president Obama's speech, we see that the words "common," "spirit," "crisis," "across," and "carried" have the highest tf-idf weights. In comparison, these words rarely show up in president Bush's speech.
+If we take a look at president Obama's speech, we see that the words "common," "spirit," "crisis," "across," and "carried" have the highest tf-idf weights. In comparison, these words rarely show up in president Bush's speech. Considering the context of president Obama's speech, the words selected through tf-idf highlight president Obama's concerns about America and his plea to Americans.  
 
-Considering the context of president Obama's speech, the words selected through tf-idf highlight president Obama's concerns about America and his plea to Americans.  
-
-During president Obama's 2008 election campaign, the state of the U.S. economy was deteriorating rapidly due to the financial crisis of 2007-2008. In fact, the U.S. economy was experiencing double-digit unemployment figures by the end of 2009, up from 5% in 2007. Not only that, but as president Obama pointed out in his speech, the U.S. had been at war in Afghanistan and Iraq for eight years from 2001. In essence, his inauguration took place in times of much uncertainty and socio-economic instability. Thus, it comes without surprise that "crisis" was one of the most used words.  
-
-Regarding the words "spirit" and "job," one can interpret them as showcasing president Obama's resolve to bring forth a refreshing spirit to a stagnant America, just as he himself wrote anew the white-male-dominated history of the U.S. presidency.    
+During president Obama's 2008 election campaign, the state of the U.S. economy was deteriorating rapidly due to the financial crisis of 2007-2008. In fact, the U.S. economy was experiencing double-digit unemployment figures by the end of 2009, up from 5% in 2007. Not only that, but as president Obama pointed out in his speech, the U.S. had been at war in Afghanistan and Iraq for eight years from 2001. In essence, his inauguration took place in times of much uncertainty and socio-economic instability. Thus, it comes without surprise that "crisis" was one of the most used words. Regarding the words "spirit" and "job," one can interpret them as showcasing president Obama's resolve to bring forth a refreshing spirit to a stagnant America, just as he himself wrote anew the white-male-dominated history of the U.S. presidency.    
 
 On the other hand, if we look at the words in president Bush's speech, we also see that his campaign themes have been infused into the speech. In the light of the September 11 attacks, Bush attempted to portray himself as a strong leader who was tough on terrorism in his campaign. This gave the words "fire" and "tyranny" high tf-idf weights, because he used the words often to describe terrorism. Similarly, "justice," "liberty," and "human" showed up as keywords because he tried to depict himself as a defender of freedom and human rights.
 
 
-
- # Conclusion
+# Conclusion
 
 This post dealt with the concept of the tf-idf weighting scheme, as well as an example demonstration of the scheme using the `inaugural` dataset. Although I am, by no means, an expert on natural language processing, I hope I can discover and learn more exciting things in my journey down the NLP road. Thanks for reading. 
 

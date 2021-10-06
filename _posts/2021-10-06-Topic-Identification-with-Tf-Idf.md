@@ -434,6 +434,7 @@ for word, weight in weights2[:5]:
     tyranny 0.1461568190483739
 
 
+---
 # Analysis
 
 Now that we have the tf-idf weights, let's try to interpret the speeches in the context of the words with the highest weights. 

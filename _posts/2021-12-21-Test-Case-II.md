@@ -11,9 +11,9 @@ tags:
 
 # Test Case
 
-$$ E = mc^2 \tag{1}$$
+$$ E = mc^2 \tag{1} $$
 
-Equation on a single line ($E = mc^2$). 
+Equation on a single line ($E = mc^{2}$). 
 
 
 ```python

@@ -1,0 +1,31 @@
+<div class="cell markdown" id="uEXwOAALyAaS">
+
+# Test Case
+
+</div>
+
+<div class="cell markdown" id="FbmSRNpJyCpr">
+
+\[ E = mc^2 \tag{1}\]
+
+</div>
+
+<div class="cell markdown" id="2qHwwH40yInQ">
+
+Equation on a single line (\(E = mc^2\)).
+
+</div>
+
+<div class="cell code" data-execution_count="1" data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="GanAjRd0w1xS" data-outputId="9751bee5-1bf3-42fc-a983-533e39feab78">
+
+``` python
+print("hello world")
+```
+
+<div class="output stream stdout">
+
+    hello world
+
+</div>
+
+</div>

@@ -11,7 +11,6 @@ tags:
 
 
 
-# Motivation
 
 This post covers my attempts at learning PyTorch--a framework that I had long intended to use, but never exactly had time to master in depth. Whereas experimenting with TensorFlow had been the main content of this blog, trying to create future posts for readers using PyTorch while not knowing it in detail seemed like a case of the blind leading the blind--which lead me to write this post as as an attempt to set PyTorch basics in stone for my memory.  
 
@@ -95,6 +94,7 @@ tensor234.shape
 
 
 
+### Reshape Tensors
 
 ```python
 torch.reshape(tensor234, (3,2,4)) # reshaped from 2 X 3 X 4 tensor to 3 X 2 X 4
@@ -138,6 +138,7 @@ print(tensor234 + 1)
              [1., 1., 1., 1.]]])
     
 
+### Transpose 
 
 ```python
 print(tensor234, end='\n\n') # original: 2 by 3 by 4
@@ -179,6 +180,8 @@ print(tensor234.T.shape)
     torch.Size([4, 3, 2])
     
 
+### Dot Product
+
 Dot products can be performed using the `@` operator, and concatenation with `.cat()`. 
 
 
@@ -195,6 +198,7 @@ torch.Tensor([[1,2,3], [3,2,1]]) @ torch.Tensor([[3,2], [2,1], [3,4]])
 
 
 
+### Concatenate
 
 ```python
 a = torch.Tensor([[1,2,3],
@@ -402,7 +406,6 @@ output
 
 
 ```
-
     tensor([[[1., 1., 1., 1.],
              [1., 1., 1., 1.],
              [1., 1., 1., 1.]],
@@ -411,11 +414,6 @@ output
              [1., 1., 1., 1.],
              [1., 1., 1., 1.]]])
     
-    
-
-
-
-
     tensor([[[0.2605, 0.4933],
              [0.2605, 0.4933],
              [0.2605, 0.4933]],
@@ -428,7 +426,7 @@ output
 
 ## Network of Layers
 
-So in my previous posts, I have dealt with creating some basic convolution neural net structures with TensorFlow, but given that I haven't done so with PyTorch yet, I decided to give it a try. As for creating a complete training pipeline with a comprehensive dataset, that will be reserved for a different post, with this section focusing on setting up a functioning CNN framework. 
+In my previous posts, I have dealt with creating some basic convolution neural net structures with TensorFlow, but given that I haven't done so with PyTorch yet, I decided to give it a try. As for creating a complete training pipeline with a comprehensive dataset, that will be reserved for a different post, with this section focusing on setting up a functioning CNN framework. 
 
 Suppose we had a tensor of dimension `shape = [3,5,4,2]`, and let's try to pass this tensor through a `nn.Conv2d` layer. `nn.Conv2d` has the following list of parameters that must be specified, so let's walk through each of them one step at a time.  
 

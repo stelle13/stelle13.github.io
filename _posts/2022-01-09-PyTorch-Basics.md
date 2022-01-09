@@ -18,6 +18,7 @@ This post covers my attempts at learning PyTorch--a framework that I had long in
 
 # Tensors
 
+
 First, let's import all the necessary modules and functions. In PyTorch, the `torch.nn` class provides a comprehensive collection of widely-used layer, activation, and loss functions--all packaged nicely inside the class. 
 
 
@@ -94,7 +95,8 @@ tensor234.shape
 
 
 
-### Reshape Tensors
+## Reshape Tensors
+
 
 ```python
 torch.reshape(tensor234, (3,2,4)) # reshaped from 2 X 3 X 4 tensor to 3 X 2 X 4
@@ -138,7 +140,8 @@ print(tensor234 + 1)
              [1., 1., 1., 1.]]])
     
 
-### Transpose 
+## Transpose 
+
 
 ```python
 print(tensor234, end='\n\n') # original: 2 by 3 by 4
@@ -180,7 +183,8 @@ print(tensor234.T.shape)
     torch.Size([4, 3, 2])
     
 
-### Dot Product
+## Dot Product
+
 
 Dot products can be performed using the `@` operator, and concatenation with `.cat()`. 
 
@@ -198,7 +202,8 @@ torch.Tensor([[1,2,3], [3,2,1]]) @ torch.Tensor([[3,2], [2,1], [3,4]])
 
 
 
-### Concatenate
+## Concatenate
+
 
 ```python
 a = torch.Tensor([[1,2,3],
@@ -219,6 +224,7 @@ print(torch.cat([a,a,a], dim=1))
     
 
 # `torch.autograd`
+
 
 A unique feature of PyTorch is its `torch.autograd`--a package that "provides classes and functions implementing automatic differentiation of arbitrary scalar valued functions," according to the official [PyTorch](https://pytorch.org/docs/stable/autograd.html#default-gradient-layouts) documentation. 
 
@@ -270,7 +276,9 @@ Neural networks consist of stacks of layers with multiple units, as well as the 
 
 Below are some very basic applications of `torch.nn`. 
 
+
 ## Linear Layer
+
 
 `nn.Linear(4,2)` takes matrix of (n, p, 4) dimensions and outputs a matrix of (n, p, 2)
 
@@ -370,7 +378,9 @@ $$A \cdot x + b = \text{Output}$$
 $$ \begin{bmatrix} 1 & 1 & 1 & 1 \\ 1 & 1 & 1 & 1 \\ 1 & 1 & 1 & 1\\ \end{bmatrix} \cdot \begin{bmatrix} 0.0776 & -0.4695  \\ 0.1701 & 0.0630 \\ 0.1028 & 0.2066 \\ -0.3622 & 0.3651 \\ \end{bmatrix} + \begin{bmatrix} -0.3205 & -0.0004 \\ -0.3205 & -0.0004 \\ -0.3205 & -0.0004 \\ \end{bmatrix} = \begin{bmatrix} -0.3322 & 0.1648 \\ -0.3322 & 0.1648  \\ -0.3322 & 0.1648 \\ \end{bmatrix}$$
 
 
+
 ## Sigmoid Layer
+
 
 
 ```python
@@ -424,7 +434,9 @@ output
 
 
 
+
 ## Network of Layers
+
 
 In my previous posts, I have dealt with creating some basic convolution neural net structures with TensorFlow, but given that I haven't done so with PyTorch yet, I decided to give it a try. As for creating a complete training pipeline with a comprehensive dataset, that will be reserved for a different post, with this section focusing on setting up a functioning CNN framework. 
 
@@ -692,6 +704,8 @@ trans(img)
 
 
 
+
 # Conclusion
+
 
 In this post, I went over the basics of using PyTorch, including setting up tensors to perform basic operations on them, and used functions and modules in `torch.nn` to create simple network structures. Although this post tended to focus on the basic grammar of the PyTorch framework, I hope to make more fun and practical use of it in the near future. 

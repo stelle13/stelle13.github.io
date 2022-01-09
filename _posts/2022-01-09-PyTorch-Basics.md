@@ -1,3 +1,16 @@
+---
+title: "PyTorch Basics"
+date: 2022-01-09
+toc: true
+mathjax: true
+categories:
+  - study
+tags:
+  - PyTorch
+---
+
+
+
 # Motivation
 
 This post covers my attempts at learning PyTorch--a framework that I had long intended to use, but never exactly had time to master in depth. Whereas experimenting with TensorFlow had been the main content of this blog, trying to create future posts for readers using PyTorch while not knowing it in detail seemed like a case of the blind leading the blind--which lead me to write this post as as an attempt to set PyTorch basics in stone for my memory.  

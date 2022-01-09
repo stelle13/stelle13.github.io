@@ -652,8 +652,9 @@ img
 
 
     
-![png](PyTorch_Basics_files/PyTorch_Basics_56_0.png)
-    
+<figure class="align-center">
+  <img src="/assets/images/nsky.png" alt="">
+</figure> 
 
 
 

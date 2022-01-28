@@ -71,8 +71,6 @@ We begin with the widely known equation for a recurrent network's hidden state.
 
 $$h^{(t)}=\sigma\left(W_{h} \cdot h^{(t-1)}+W_{x} \cdot x^{(t)}+b_{1}\right) \tag{10}$$
 
-$$$$
-
 Suppose $ \mathbf{z} = f(\mathbf{x})$. Then each element of matrix $\frac{\partial{\mathbf{z}}}{\partial{\mathbf{x}}}$ can written as the following. 
  
 $$ \left(\frac{\partial \mathbf{z}}{\partial \mathbf{x}}\right)_{i j}=\frac{\partial z_{i}}{\partial x_{j}}=\frac{\partial f\left(x_{i}\right)}{\partial x_{j}}=\left\{\begin{array}{l}
@@ -83,32 +81,21 @@ f^{\prime}\left(x_{i}\right) \;\; \text{(if $i=j$)}\\
 And thus, 
 $$\frac{\partial \bf{z}}{\partial \bf{x}}=\operatorname{diag}\left(f^{\prime}(x)\right).$$
 
-$$$$
-
 Going back to equation 10, taking one hidden state vector's partial derivative with respect to the previous hidden state vector yields the following result. 
-
 
 $$\frac{\partial h^{(t)}}{\partial h^{(t-1)}}=\frac{\partial\left[\sigma\left(W_{h} \cdot h^{(t-1)}+W_{x} \cdot x^{(t)}+b_{1}\right)\right]}{\partial h^{(t-1)}} \tag{11}$$
 
 $$=\operatorname{diag}\left(\sigma^{\prime}\left(W_{h} h^{(t-1)}+W_{x} \cdot x^{(t)}+b_{1}\right)\right) W_{h} \tag{12}$$
 
-$$$$
-
 If we take a vector derivative of loss function $J^{(i)}$ with respect to the hidden state vector at previous timestep $j$, using the chain rule, we get a bunch of products of the term at equation (12). 
 
-
-$$\frac{\partial J^{(i)}(\theta)}{\partial h^{(j)}}=\frac{\partial J^{(i)}(\theta)}{\partial h^{(i)}} \cdot \prod_{j<t \leq i} \frac{\partial h^{(t)}}{\partial h^{(t-1)}}$$
-
-$$$$
+$$\frac{\partial J^{(i)}(\theta)}{\partial h^{(j)}}=\frac{\partial J^{(i)}(\theta)}{\partial h^{(i)}} \cdot \prod_{j<t \leq i} \frac{\partial h^{(t)}}{\partial h^{(t-1)}}  \tag{13}$$
 
 Using equation (12) and pulling out $W_{h}$ to the front, we see that the repeated dot product of the term may result in a case where that term *and* the gradient both converge to zero--especially if $W_{h}$ consist of small terms. 
 
-
-$$=\frac{\partial J^{(i)}(\theta)}{\partial h^{(i)}} \cdot \underbrace{W_{h}^{(i-j)}}_{\text {(converges to zero) }} \cdot \prod_{j<t \leq i} \operatorname{diag}\left(\sigma^{\prime}\left(W_{h} h^{(t-1)}+W_{x} \cdot x^{(t)}+b_{1}\right)\right)$$
+$$=\frac{\partial J^{(i)}(\theta)}{\partial h^{(i)}} \cdot \underbrace{W_{h}^{(i-j)}}_{\text {(converges to zero) }} \cdot \prod_{j<t \leq i} \operatorname{diag}\left(\sigma^{\prime}\left(W_{h} h^{(t-1)}+W_{x} \cdot x^{(t)}+b_{1}\right)\right) \tag{14}$$
 
 ## Solutions
-
-
 
 There are several strategies for dealing with gradient issues, and some of the most widely-known ones include the following: 
 

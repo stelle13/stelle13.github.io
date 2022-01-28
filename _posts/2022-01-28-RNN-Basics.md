@@ -1,3 +1,14 @@
+---
+title: "Recurrent Networks"
+date: 2022-01-28
+toc: true
+mathjax: true
+categories:
+  - study
+tags:
+  - RNNs
+---
+
 This post covers the definition, principles, and basic workings of recurrent neural nets. The materials referenced in this post include the obvious ones, such as Stanford's [CS224n lectures](https://web.stanford.edu/class/archive/cs/cs224n/cs224n.1194/), but also Afshine and Shervine Amidi's recurrent neural networks [cheatsheet](https://stanford.edu/~shervine/teaching/cs-230/cheatsheet-recurrent-neural-networks) and [CS230](https://stanford.edu/~shervine/teaching/cs-230/).
 
 # Introduction

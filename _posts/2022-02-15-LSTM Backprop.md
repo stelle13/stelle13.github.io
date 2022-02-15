@@ -1,3 +1,15 @@
+---
+title: "Backprop with LSTM"
+date: 2022-02-15
+toc: true
+mathjax: true
+categories:
+  - study
+tags:
+  - LSTM
+  - Backprop
+---
+
 # Background
 
 In the last post, I discussed some of the most famous problems with recurrent networks--namely, the vanishing and exploding gradient problems that can throw a wrench in the works of recurrent backpropagation. These issues are also known as long-term dependency problems, where a recurrent network, such as a language model, needs a particular piece of information presented at the beginning of a time-series sequence to predict the next part of that sequence. When applying the chain rule with respect to all the dependencies, if a gradient value too small or large comes across multiple timesteps, gradient update through backprop becomes almost impossible. 

@@ -2,7 +2,6 @@
 title: "Backprop with LSTM"
 date: 2022-02-15
 toc: true
-mathjax: true
 categories:
   - study
 tags:

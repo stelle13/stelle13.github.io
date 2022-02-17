@@ -149,7 +149,6 @@ $$
 
 But since the structure of long short-term memory requires that we find $\vec{i}_t$ by applying $\text{softmax}$ to $\vec{a}_{i}=W_{i} \cdot \vec{z}_{t}+\vec{b}_{i}$ first, we backtrack once more to these two equations. 
 
-
 $$ \begin{array}{l}
 \vec{c}_{t}=\vec{i}_{t} \odot \hat{c}_{t}+\vec{f}_{t} \odot \vec{c}_{t-1}  \\
 \vec{i}_{t}=\sigma\left(\vec{a}_{i}\right)

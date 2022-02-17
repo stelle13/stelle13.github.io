@@ -154,18 +154,6 @@ $$ \begin{array}{l}
 \vec{i}_{t}=\sigma\left(\vec{a}_{i}\right)
 \end{array}$$
 
-Apply the chain rule here, and we get the following. 
-
-$$$$
-$$ \left.\begin{array}{l}
-\vec{c}_{t}=\vec{i}_{t} \odot \hat{c}_{t}+\vec{f}_{t} \odot \vec{c}_{t-1}  \\
-\vec{i}_{t}=\sigma\left(\vec{a}_{i}\right)
-\end{array}\right\} \rightarrow \frac{\partial J}{\partial a_{i}}=\frac{\partial J}{\partial \vec{i}_{t}} \cdot \frac{{\partial \vec{i}_{t}}}{\partial a_{i}} $$ 
-$$$$
-
-
- 
-
 The  expression $\frac{{\partial \vec{i}_{t}}}{\partial a_{i}}$ is a matrix with $\frac{\partial \hat{i}_{t}}{\partial \hat{a}_{i}}$ as elements, defined in the following manner. 
 
 $$

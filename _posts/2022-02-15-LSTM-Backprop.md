@@ -160,9 +160,9 @@ Apply the chain rule here, and we get the following.
 $$ \left.\begin{array}{l}
 \vec{c}\_{t}=\vec{i}\_{t} \odot \hat{c}\_{t}+\vec{f}\_{t} \odot \vec{c}\_{t-1}  \\
 \vec{i}\_{t}=\sigma\left(\vec{a}\_{i}\right)
-\end{array}\right\} \rightarrow \frac{\partial J}{\partial a\_{i}}=\frac{\partial J}{\partial \vec{i}\_{t}} \cdot \frac{{\partial \vec{i}\_{t}}}{\partial a\_{i}} $$ 
+\end{array}\right\} \rightarrow \frac{\partial J}{\partial a\_{i}}=\frac{\partial J}{\partial \vec{i}\_{t}} \cdot \frac{{\partial i\_{t}}}{\partial a\_{i}} $$ 
 
-The  expression $\frac{{\partial \vec{i}\_{t}}}{\partial a\_{i}}$ is a matrix with $\frac{\partial \hat{i}\_{t}}{\partial \hat{a}\_{i}}$ as elements, defined in the following manner. 
+The  expression $\frac{{\partial i\_{t}}}{\partial a\_{i}}$ is a matrix with $\frac{\partial \hat{i}\_{t}}{\partial \hat{a}\_{i}}$ as elements, defined in the following manner. 
 
 $$
 \frac{\partial \hat{i}_{t}}{\partial \hat{a}_{i}}=\left\{\begin{array}{ll}

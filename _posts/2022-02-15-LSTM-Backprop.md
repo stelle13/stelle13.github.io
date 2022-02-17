@@ -74,7 +74,7 @@ J=J (\hat{y}_{t}) \\
 \hat{y}_{t}=\operatorname{softmax}\left(\vec{v}_{t}\right)
 \end{array}\right\} \rightarrow \frac{\partial J}{\partial \vec{v}_{t}}=\frac{\partial J}{\partial \hat{y}_{t}} \cdot \frac{\partial \hat{y}_{t}}{\partial \vec{v}_{t}} $$ 
 
-The $\frac{\partial \hat{y}_{t}}{\partial \vec{v}_{t}}$ expression is a matrix with the following elements, and the detailed derivations of the softmax operator can be found at this [site](https://deepnotes.io/softmax-crossentropy). 
+The $\frac{\partial\hat{y}_{t}}{\partial\vec{v}_{t}}$ expression is a matrix with the following elements, and the detailed derivations of the softmax operator can be found at this [site](https://deepnotes.io/softmax-crossentropy). 
 
 $$$$
 
@@ -84,8 +84,8 @@ y_{i}\left(1-y_{j}\right) & \text { if } i=j \\
 -y_{j} \cdot y_{i} & \text { if } i \neq j
 \end{array}\right.$$
 
-The $\vec{v}_{t}$ is calculated via applying the weight matrix $W_{v}$ and bias vector $\vec{b}_v$ to the hidden state.  
-
+The $\vec{v}\_t$ is calculated via applying the weight matrix $W_{v}$ and bias vector $\vec{b}\_{v}$ to the hidden state. 
+                  
 $$ \begin{array}{l}
 \hat{y}_{t}=\operatorname{softmax}\left(\vec{v}_{t}\right) \\
 \vec{v}_{t}=W_{v} \cdot \vec{h}_{t}+\vec{b}_{v}

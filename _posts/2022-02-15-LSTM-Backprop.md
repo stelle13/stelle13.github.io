@@ -154,8 +154,6 @@ $$ \begin{array}{l}
 \vec{i}_{t}=\sigma\left(\vec{a}_{i}\right)
 \end{array}$$
 
-The  expression $\frac{{\partial \vec{i}_{t}}}{\partial a_{i}}$ is a matrix with $\frac{\partial \hat{i}_{t}}{\partial \hat{a}_{i}}$ as elements, defined in the following manner. 
-
 $$
 \frac{\partial \hat{i}_{t}}{\partial \hat{a}_{i}}=\left\{\begin{array}{ll}
 i_{a}\left(1-i_{b}\right) & \text { if } a=b \\

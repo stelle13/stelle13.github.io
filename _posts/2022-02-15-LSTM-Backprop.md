@@ -74,7 +74,7 @@ J=J (\hat{y}_{t}) \\
 \hat{y}_{t}=\operatorname{softmax}\left(\vec{v}_{t}\right)
 \end{array}\right\} \rightarrow \frac{\partial J}{\partial \vec{v}_{t}}=\frac{\partial J}{\partial \hat{y}_{t}} \cdot \frac{\partial \hat{y}_{t}}{\partial \vec{v}_{t}} $$ 
 
-The $\frac{\partial\hat{y}_{t}}{\partial\vec{v}_{t}}$ expression is a matrix with the following elements, and the detailed derivations of the softmax operator can be found at this [site](https://deepnotes.io/softmax-crossentropy). 
+The $\frac{\partial \hat{y}\_{t}}{\partial \vec{v}\_{t}}$ expression is a matrix with the following elements, and the detailed derivations of the softmax operator can be found at this [site](https://deepnotes.io/softmax-crossentropy). 
 
 $$$$
 
@@ -102,11 +102,11 @@ $$ \left.\begin{array}{l}
 \end{array}\right\} \rightarrow \frac{\partial J}{\partial \vec{h}_{t}}=\frac{\partial J}{\partial \vec{v}_{t}} \cdot \frac{\partial \vec{v}_{t}}{\partial \vec{h}_{t}} \tag{1}$$ 
 
 
-Notice that we already calculated the value $\frac{\partial J}{\partial \vec{v}_{t}}$in the above steps, so simply plug in that value for $\frac{\partial J}{\partial \vec{v}_{t}}$ in $(1)$. Since $\vec{v}_{t}=W_{v} \cdot \vec{h}_{t}+\vec{b}_{v}$, equation $(1)$ turns out like below. 
+Notice that we already calculated the value $\frac{\partial J}{\partial \vec{v}\_{t}}$ in the above steps, so simply plug in that value for $\frac{\partial J}{\partial \vec{v}\_{t}}$ in $(1)$. Since $\vec{v}\_{t}=W\_{v} \cdot \vec{h}\_{t}+\vec{b}\_{v}$, equation $(1)$ turns out like below. 
 
 $$ \frac{\partial J}{\partial h_{t}} = {W}^\top_{v} \cdot \frac{\partial J}{\partial v_{t}} $$
 
-Next in our backtracking sequence is calculating $\vec{h}_t$ by taking the hadamard product between $\text{tanh}(\vec{c}_t)$ and $\vec{o}_{t}$. 
+Next in our backtracking sequence is calculating $\vec{h}\_t$ by taking the hadamard product between $\text{tanh}(\vec{c}\_t)$ and $\vec{o}\_{t}$. 
 
 $$ \begin{array}{l}
 \vec{v}_{t}=W_{v} \cdot \vec{h}_{t}+\vec{b}_{v} \\
@@ -145,15 +145,24 @@ $$ \left.\begin{array}{l}
 \end{array}\right\} \rightarrow \frac{\partial J}{\partial \vec{i}_{t}}=\frac{\partial J}{\partial \vec{c}_{t}} \cdot \frac{\partial \vec{c_{t}}}{\partial \vec{i}_{t}} \tag{3}$$ 
 $$$$
 
-$$\frac{\partial J}{\partial \vec{i}_{t}} = \frac{\partial J}{\partial \vec{c}_{t}} \odot \hat{c}_{t}
+$$\frac{\partial J}{\partial \vec{i}\_{t}} = \frac{\partial J}{\partial \vec{c}\_{t}} \odot \hat{c}\_{t}
 $$
 
-But since the structure of long short-term memory requires that we find $\vec{i}_t$ by applying $\text{softmax}$ to $\vec{a}_{i}=W_{i} \cdot \vec{z}_{t}+\vec{b}_{i}$ first, we backtrack once more to these two equations. 
+But since the structure of long short-term memory requires that we find $\vec{i}\_t$ by applying $\text{softmax}$ to $\vec{a}\_{i}=W\_{i} \cdot \vec{z}\_{t}+\vec{b}\_{i}$ first, we backtrack once more to these two equations. 
 
 $$ \begin{array}{l}
 \vec{c}_{t}=\vec{i}_{t} \odot \hat{c}_{t}+\vec{f}_{t} \odot \vec{c}_{t-1}  \\
 \vec{i}_{t}=\sigma\left(\vec{a}_{i}\right)
 \end{array}$$
+
+Apply the chain rule here, and we get the following. 
+
+$$ \left.\begin{array}{l}
+\vec{c}\_{t}=\vec{i}\_{t} \odot \hat{c}\_{t}+\vec{f}\_{t} \odot \vec{c}\_{t-1}  \\
+\vec{i}\_{t}=\sigma\left(\vec{a}\_{i}\right)
+\end{array}\right\} \rightarrow \frac{\partial J}{\partial a\_{i}}=\frac{\partial J}{\partial \vec{i}\_{t}} \cdot \frac{{\partial \vec{i}\_{t}}}{\partial a\_{i}} $$ 
+
+The  expression $\frac{{\partial \vec{i}\_{t}}}{\partial a\_{i}}$ is a matrix with $\frac{\partial \hat{i}\_{t}}{\partial \hat{a}\_{i}}$ as elements, defined in the following manner. 
 
 $$
 \frac{\partial \hat{i}_{t}}{\partial \hat{a}_{i}}=\left\{\begin{array}{ll}
@@ -163,12 +172,12 @@ i_{a}\left(1-i_{b}\right) & \text { if } a=b \\
 
 Finally, take the partial derivative with respect to the weight matrix $W_{i}$. 
 
-$$$$
+
 $$ \left.\begin{array}{l}
 \vec{i}_{t}=\sigma\left(\vec{a}_{i}\right) \\
 \vec{a}_{i}=W_{i} \cdot \vec{z}_{t}+\vec{b}_{i} 
 \end{array}\right\} \rightarrow \frac{\partial J}{\partial W_{i}}=\frac{\partial J}{\partial a_{i}} \cdot \frac{\partial a_{i}}{\partial W_{i}} $$ 
-$$$$
+
 
 $$ \frac{\partial J}{\partial W_{i}} = \frac{\partial J}{\partial a_{i}} \cdot {z}^\top_{t}, \;\;\; \text{where}\; z_{t}=\left[h_{t-1}, x_{t}\right]
  $$

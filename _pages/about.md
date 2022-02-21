@@ -4,6 +4,9 @@ title: "About"
 ---
 
 
+Personal Study Notes:
+
+1. [Notes on Bayesian Inference](https://github.com/stelle13/Notes-Resources/blob/main/Central%20Limit%20Theorem.pdf)
 
 I am currently a rising sophomore at a university in South Korea. Although currently an economics major, I wish to study about deep learning and neural networks, given my interest in applied mathematics, including statistics. 
 

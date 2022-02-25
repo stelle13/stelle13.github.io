@@ -22,7 +22,7 @@ $$
 
 
 
-$$ \text{MGF.}\;\;\; M(t) = \int^{\infty}_{0} {e}^{tx} \frac{{x}^{\alpha-1}}{\Gamma(\alpha) {\beta}^{\alpha}} {e}^{-\frac{x}{\beta}} dx = \frac{1}{(1-\beta t)^\alpha} $$
+$$ \text{MGF.}\;\;\; M(t) = \int^{\infty}\_{0} {e}^{tx} \frac{{x}^{\alpha-1}}{\Gamma(\alpha) {\beta}^{\alpha}} {e}^{-\frac{x}{\beta}} dx = \frac{1}{(1-\beta t)^\alpha} $$
   
 
 $$ \text{MEAN.}\;\;\; \mu = M'(0) = \alpha\beta$$

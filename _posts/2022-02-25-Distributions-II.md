@@ -15,10 +15,11 @@ tags:
 
 $$\text{Symbol}\;\;\; X \sim \Gamma(\alpha, \beta) $$
 
-$$ \text{PMF.}\;\;\;
+
+<div> $$ \text{PMF.}\;\;\;
 f(x) = 
 \left\{\begin{array}{ll} \frac{1}{\Gamma(\alpha) {\beta}^{\alpha}} {x}^{\alpha-1} {e}^{-x/\beta} & \text { if } 0 < x < \infty \\ \ 0 & \text { if } \text{elsewhere} \end{array}\right.
-$$
+$$ <div>
 
 
 

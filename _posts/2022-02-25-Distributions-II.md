@@ -23,6 +23,10 @@ $$ \text{MEAN.}\;\;\; \mu = M'(0) = \alpha\beta$$
 
 $$ \text{STD.}\;\;\; {\sigma}^{2} = M''(0) - {\mu}^{2} = \alpha {\beta}^{2} $$
 
+{% raw %}
+$$ \text{MGF.}\;\;\; M(t) = \int^{\infty}\_{0} {e}^{tx} \frac{{x}^{\alpha-1}}{\Gamma(\alpha) {\beta}^{\alpha}} {e}^{-\frac{x}{\beta}} dx = \frac{1}{(1-\beta t)^\alpha} $$
+{% endraw %}
+
 
 ```python
 import numpy as np

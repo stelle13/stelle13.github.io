@@ -9,17 +9,22 @@ tags:
   - statistics
 ---
 
-# Distribution Post 2
 
 In this post, I discuss the gamma, chi-squared, and exponential distributions. 
 
+# Background
+
 Recently, I realized that I needed to refresh my memory of some important distributions that showed up in a Bayesian statistics book that I was studying. Those distributions included the gamma, the chi-squared, and the exponential distributions, and while I was brushing up on them, I decided to use the opportunity to record what I studied. (After all, there is no better way to study something than to explain it to someone else.) Given that I already posted on binomial and poisson distributions, this post will cover the three aforementioned distributions: their definitions, properties, and examples. The sources I referenced include: video by [Lawrence Leemis](https://www.youtube.com/watch?v=gIsoceE4vhg) on the gamma distribution, [jbstatistics](https://www.youtube.com/watch?v=hcDb12fsbBU&t=0s) on chi-square distribution, this open-source [textbook](https://opentextbc.ca/introstatopenstax/chapter/the-exponential-distribution/) on exponential distributions from BCcampus Open Publishing, under CC BY 4.0.
 
+---
 
-# Gamma
+# Gamma Distribution
 
 $$ \begin{align} X \sim \Gamma(\alpha, \lambda) \end{align} $$
 
+<figure class="align-center">
+  <img src="/assets/images/gamma.png" alt="">
+</figure> 
 
 
 ```python
@@ -31,7 +36,7 @@ import seaborn as sns
 from scipy.stats import gamma
 
 def show_gamma():
-    """Show an example of Poisson distributions"""
+
     a1 = 1.99
     a2 = 3.99
     a3 = 6.99
@@ -62,9 +67,7 @@ show_gamma()
 ```
 
 
-    
-![png](dis2_files/dis2_5_0.png)
-    
+  
 
 
 Probability density function
@@ -84,11 +87,15 @@ Moment Generating Function
 
 $$  \begin{align} M_X(t) = \frac{1}{(1-\frac{t}{\lambda})^{\alpha}} \;\; (t < \lambda)       \end{align} \tag{4} $$
 
-# Exponential
+---
+
+# Exponential Distribution
 
 $$ \begin{align} X \sim expo(\lambda)        \end{align} $$
 
-
+<figure class="align-center">
+  <img src="/assets/images/expo.png" alt="">
+</figure> 
 
 ```python
 import numpy as np
@@ -118,10 +125,6 @@ showExp()
 ```
 
 
-    
-![png](dis2_files/dis2_15_0.png)
-    
-
 
 Probability Distribution Function
 
@@ -139,10 +142,15 @@ Moment Generatng Function
 
 $$ \begin{align} M_X(t) = \frac{1}{(1-\frac{t}{\lambda})}        \end{align} \tag{8}$$
 
-# Chi-squared
+---
+
+# Chi-squared Distribution
 
 $$X \sim \chi^2(k)  $$
 
+<figure class="align-center">
+  <img src="/assets/images/chi2.png" alt="">
+</figure> 
 
 ```python
 import numpy as np
@@ -172,11 +180,6 @@ showChi2()
 ```
 
 
-    
-![png](dis2_files/dis2_25_0.png)
-    
-
-
 Probability Density Function
 
 $$ \begin{align} f(x) = \frac{1}{2^{k/2} \Gamma(k/2)} x^{\frac{k}{2} - 1} e^{-\frac{x}{2}}        \end{align} \;\;\; \text{(k : shape parameter)} \tag{9} $$
@@ -191,6 +194,8 @@ $$  \begin{align} \sigma^2 = Var(X) = 2k       \end{align} \tag{11} $$
 Moment Generating Function
 
 $$  \begin{align} M_X(t) = (1-2t)^{-k/2}      \end{align} \tag{12} $$
+
+---
 
 # Conclusion
 

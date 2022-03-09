@@ -9,7 +9,7 @@ tags:
   - statistics
 ---
 
-# Distribution Post 2
+# Distribution Post II
 
 In this post, I discuss the gamma, chi-squared, and exponential distributions. 
 

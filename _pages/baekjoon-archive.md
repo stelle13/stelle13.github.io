@@ -1,6 +1,6 @@
 ---
 title: "Baekjoon"
-permalink: /posts/
+permalink: /Baekjoon/
 layout: posts
 author_profile: true
 ---

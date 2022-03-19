@@ -1,3 +1,14 @@
+---
+title: "Recursion I"
+date: 2022-03-09
+toc: true
+mathjax: true
+categories:
+  - study
+tags:
+  - recursion
+---
+
 # Recursion I
 
 ## Tower of Hanoi

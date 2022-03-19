@@ -9,11 +9,10 @@ tags:
   - recursion
 ---
 
-# Recursion I
-
 ## Tower of Hanoi
 
-$$\text{<Description>}$$
+---
+### Description
 
 + Task: 
   + Move a total of $n$ disks of different sizes from the source column to the destination column, using a third column as an intermediary.
@@ -24,7 +23,8 @@ $$\text{<Description>}$$
 
 
 
-$$\text{<Pseudocode>}$$
+---
+### Pseudocode
 
 ```
 Hanoi (n, source, temporary, destination):
@@ -47,7 +47,7 @@ $$T(n) = 1+ 2+ 2^2 + ... + 2^{n-1} = \frac{2^n-1}{2-1} \;\;\; \text{(moves)}$$
 
 
 
-$$\text{<Implementation>}$$
+### Implementation
 
 
 ```python

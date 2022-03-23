@@ -18,7 +18,7 @@ In this post, I cover the basics of graph theory, including graph representation
 + Graph $(V,E)$ = Pair of sets $V, E$
 + V = Set of nodes
 + E = Set of edges between two nodes
-  + $E \subseteq \{\{x, y\} \;\;|\;\;  x,y \in V, x \neq y\}$
+  + $ E \subset \{ \{x, y\} \;\; | \;\;  x,y \in V, x \neq y\} $
 
 
 
@@ -93,7 +93,7 @@ Source: USA Computing Olympiad US Open 2007 Contest, Silver No. 2
 
 
 <figure class="align-center">
-  <img src="/assets/images/john1.png" alt="">
+  <img src="/assets/images/john6.png" alt="">
 </figure> 
 
 

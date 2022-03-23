@@ -18,7 +18,7 @@ In this post, I cover the basics of graph theory, including graph representation
 + Graph $(V,E)$ = Pair of sets $V, E$
 + V = Set of nodes
 + E = Set of edges between two nodes
-  + $ E \subset \{ \{x, y\} \;\; \mid \;\;  x,y \in V, x \neq y\} $
+  + {% raw %} $ E \subset \{ \{x, y\} \mid x,y \in V, x \neq y \} $ {% endraw %}
 
 
 

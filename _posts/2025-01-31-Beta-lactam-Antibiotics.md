@@ -13,6 +13,10 @@ tags:
 
 Bacterial cell walls contain **peptidoglycan**, a polymer consisting of sugar chains cross-linked by short peptide chains. This structure provides **mechanical strength** and protection against osmotic lysis.
 
+<figure class="align-center">
+  <img src="/assets/images/peptidoglycan.png" alt="">
+</figure> 
+
 Beta-lactam antibiotics target **penicillin-binding proteins (PBPs)**, which are enzymes responsible for the final steps of peptidoglycan synthesis. These PBPs include:
 
 - **Transpeptidases** – responsible for cross-linking peptidoglycan strands.

@@ -20,6 +20,10 @@ Beta-lactam antibiotics target **penicillin-binding proteins (PBPs)**, which are
 
 The core structure of all beta-lactm antibiotics is the **beta-lactam ring**, a four-membered cyclic amide.
 
+<figure class="align-center">
+  <img src="/assets/images/beta_lactam_2.jpg" alt="">
+</figure> 
+
 ### **Mechanism of Inhibition:**
 
 1. **Binding to PBPs**: Beta-lactams mimic the **D-Ala-D-Ala** terminal of peptidoglycan precursors, allowing them to bind to PBPs irreversibly.

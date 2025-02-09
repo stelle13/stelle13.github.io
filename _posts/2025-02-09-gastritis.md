@@ -18,7 +18,7 @@ Around 9:30 PM, I took two gastritis-treating tablets before going to bed. But s
 I feel strongly that these kinds of events should be recorded. If I were in pain, I should write down why I was in pain, what I think I did that caused it, and what the problem was. By doing so, I can think about what I need to do to avoid the same pain later on. Plus, if I look up why I was in pain and understand exactly how taking certain kinds of medicine alleviates the symptoms, some of the frustrating questions I previously had may be answered. Most importantly, the notes I keep will become a valuable reference later on.
 
 Returning to the main topic, after briefly looking up the causes of stomach pain and acute gastritis, as well as the medications I took, I found that:
-The main ingredients of the pills I took were **dicyclomine hydrochloride** [(link)](https://www.health.kr/searchDrug/result_take.asp?drug_cd=A11AGGGGA3683) and **papaverine hydrochloride**, as well as **famotidine** [(link)](https://ko.wikipedia.org/wiki/파파베린).
+The main ingredients of the pills I took were **dicyclomine hydrochloride** [(link)](https://www.health.kr/searchDrug/result_take.asp?drug_cd=A11AGGGGA3683) and **papaverine hydrochloride**[(link)](https://ko.wikipedia.org/wiki/파파베린), as well as **famotidine**.
 
 Dicyclomine hydrochloride helps relieve abdominal pain through a dual-action mechanism as an **antispasmodic** and **anticholinergic agent** [(link)](https://www.carehospitals.com/medicine-detail/dicyclomine-hydrochloride). In other words, it blocks **acetylcholine**, a neurotransmitter responsible for muscle contractions, from acting on specific receptor sites [(link)](https://go.drugbank.com/drugs/DB00804).
 

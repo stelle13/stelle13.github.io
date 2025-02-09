@@ -77,4 +77,19 @@ By **blocking ACh binding**, anticholinergic drugs **interrupt the transmission 
 
 As a result, **smooth muscle contractions in various organs, including the digestive tract, are reduced**, leading to **muscle relaxation** and relief from spasms.
 
+### **References**
+
+- "Acetylcholine (ACh)." Cleveland Clinic, [https://my.clevelandclinic.org/health/articles/24568-acetylcholine-ach](https://my.clevelandclinic.org/health/articles/24568-acetylcholine-ach). Accessed 9 Feb. 2025.
+- "Anticholinergics." Osmosis, [https://www.osmosis.org/answers/anticholinergics](https://www.osmosis.org/answers/anticholinergics). Accessed 9 Feb. 2025.
+- "Anticholinergic and Antispasmodic Agents." RxList, [https://www.rxlist.com/how_do_anticholinergic_antispasmodic_agents_work/drug-class.htm](https://www.rxlist.com/how_do_anticholinergic_antispasmodic_agents_work/drug-class.htm). Accessed 9 Feb. 2025.
+- "Anticholinergics." Wikipedia, [https://en.wikipedia.org/wiki/Anticholinergics](https://en.wikipedia.org/wiki/Anticholinergics). Accessed 9 Feb. 2025.
+- "Dicyclomine Hydrochloride." Care Hospitals, [https://www.carehospitals.com/medicine-detail/dicyclomine-hydrochloride](https://www.carehospitals.com/medicine-detail/dicyclomine-hydrochloride). Accessed 9 Feb. 2025.
+- "Dicyclomine Hydrochloride Drug Information." Health.kr, [https://www.health.kr/searchDrug/result_take.asp?drug_cd=A11AGGGGA3683](https://www.health.kr/searchDrug/result_take.asp?drug_cd=A11AGGGGA3683). Accessed 9 Feb. 2025.
+- "How Do Anticholinergic Drugs Work?" Medical News Today, [https://www.medicalnewstoday.com/articles/323514](https://www.medicalnewstoday.com/articles/323514). Accessed 9 Feb. 2025.
+- "Motor Neurons." Asan Medical Center, [https://www.amc.seoul.kr/asan/mobile/healthinfo/body/bodyDetail.do?bodyId=18&partId=B000007](https://www.amc.seoul.kr/asan/mobile/healthinfo/body/bodyDetail.do?bodyId=18&partId=B000007). Accessed 9 Feb. 2025.
+- "Neuromuscular Junction." Wikipedia, [https://en.wikipedia.org/wiki/Neuromuscular_junction](https://en.wikipedia.org/wiki/Neuromuscular_junction). Accessed 9 Feb. 2025.
+- "Papaverine Hydrochloride." Wikipedia, [https://ko.wikipedia.org/wiki/파파베린](https://ko.wikipedia.org/wiki/파파베린). Accessed 9 Feb. 2025.
+- "Stomach Muscle Spasm." Healthgrades, [https://resources.healthgrades.com/right-care/bones-joints-and-muscles/stomach-muscle-spasm](https://resources.healthgrades.com/right-care/bones-joints-and-muscles/stomach-muscle-spasm). Accessed 9 Feb. 2025.
+- "Structure and Properties of Dicyclomine Hydrochloride." DrugBank, [https://go.drugbank.com/drugs/DB00804](https://go.drugbank.com/drugs/DB00804). Accessed 9 Feb. 2025.
+- 
 

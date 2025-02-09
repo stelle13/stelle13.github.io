@@ -91,5 +91,3 @@ As a result, **smooth muscle contractions in various organs, including the diges
 - "Papaverine Hydrochloride." Wikipedia, [https://ko.wikipedia.org/wiki/파파베린](https://ko.wikipedia.org/wiki/파파베린). Accessed 9 Feb. 2025.
 - "Stomach Muscle Spasm." Healthgrades, [https://resources.healthgrades.com/right-care/bones-joints-and-muscles/stomach-muscle-spasm](https://resources.healthgrades.com/right-care/bones-joints-and-muscles/stomach-muscle-spasm). Accessed 9 Feb. 2025.
 - "Structure and Properties of Dicyclomine Hydrochloride." DrugBank, [https://go.drugbank.com/drugs/DB00804](https://go.drugbank.com/drugs/DB00804). Accessed 9 Feb. 2025.
-- 
-

@@ -26,7 +26,7 @@ Dicyclomine hydrochloride helps relieve abdominal pain through a dual-action mec
 
 First, when the **smooth muscles** of the gastrointestinal tract contract involuntarily, it can cause spasms and pain [(link)](https://resources.healthgrades.com/right-care/bones-joints-and-muscles/stomach-muscle-spasm). Anticholinergic **antispasmodic** drugs help by preventing acetylcholine from binding to nerve cell receptors, which in turn **relaxes the smooth muscles** of the digestive tract. In other words, these drugs work by **blocking acetylcholine activity in both the central and peripheral nervous systems** [(link)](https://www.rxlist.com/how_do_anticholinergic_antispasmodic_agents_work/drug-class.htm). This blocking action suppresses **involuntary muscle movements** in various organs, including the stomach and intestines, thereby reducing pain and spasms.
 
-*Q. What exactly is acetylcholine, and does preventing it from binding to nerve cell receptors cause muscle relaxation?*
+*What exactly is acetylcholine, and does preventing it from binding to nerve cell receptors cause muscle relaxation?*
 
 **Acetylcholine (ACh)** is an organic compound that functions as a **neurotransmitter** in both the **central and peripheral nervous systems** [(link)](https://en.wikipedia.org/wiki/Acetylcholine). It is synthesized from **choline** and **acetyl-CoA** and is stored in **synaptic vesicles** at the nerve cell terminals until it is released [(link)](https://my.clevelandclinic.org/health/articles/24568-acetylcholine-ach).
 
@@ -37,7 +37,7 @@ Once released, acetylcholine travels across the **synaptic cleft** and binds to 
 
 Since acetylcholine binding to receptors **triggers muscle contraction**, preventing it from binding to nerve cell receptors results in **muscle relaxation**.
 
-*Q. How does acetylcholine binding to receptors cause muscle contraction?*
+*How does acetylcholine binding to receptors cause muscle contraction?*
 
 #### **1. Release of Acetylcholine (ACh)**
 

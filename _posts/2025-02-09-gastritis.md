@@ -24,7 +24,7 @@ The main ingredients of the pills I took were **dicyclomine hydrochloride** [(li
 
 Dicyclomine hydrochloride helps relieve abdominal pain through a dual-action mechanism as an **antispasmodic** and **anticholinergic agent** [(link)](https://www.carehospitals.com/medicine-detail/dicyclomine-hydrochloride). In other words, it blocks **acetylcholine**, a neurotransmitter responsible for muscle contractions, from acting on specific receptor sites [(link)](https://go.drugbank.com/drugs/DB00804).
 
-## Analysis
+## A Brief Analysis
 
 ### Question 1 
 > *But how are muscle contractions and stomach pain related? How does an anticholinergic drug, which blocks acetylcholine (a neurotransmitter responsible for muscle contraction), help relieve stomach pain?*

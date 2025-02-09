@@ -59,5 +59,22 @@ The influx of sodium ions **depolarizes** the muscle fiber, triggering an **acti
 
 This action potential leads to a series of intracellular events that result in **muscle contraction**.
 
+> *Anticholinergic drugs prevent acetylcholine from binding to nerve cell receptors. How does this process work?*
+
+Anticholinergic drugs work by **competitively inhibiting** acetylcholine (ACh) from binding to **muscarinic and nicotinic receptors** [(link)](https://www.osmosis.org/answers/anticholinergics).
+
+#### **1. Competitive Inhibition**
+
+Anticholinergic drugs **compete with ACh** for binding sites on receptors [(link)](https://en.wikipedia.org/wiki/Anticholinergics).
+
+#### **2. Receptor Blockade**
+
+If an anticholinergic drug binds to the receptor first, ACh **cannot attach** and activate the receptor.
+
+#### **3. Signal Disruption**
+
+By **blocking ACh binding**, anticholinergic drugs **interrupt the transmission of nerve signals** that would normally be triggered by ACh [(link)](https://www.medicalnewstoday.com/articles/323514).
+
+As a result, **smooth muscle contractions in various organs, including the digestive tract, are reduced**, leading to **muscle relaxation** and relief from spasms.
 
 

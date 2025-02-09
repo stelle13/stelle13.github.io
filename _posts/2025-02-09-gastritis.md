@@ -9,6 +9,8 @@ tags:
   - Biology
 ---
 
+## Preamble
+
 On January 28, 2025, I was in a lot of pain again due to <u>chronic gastritis</u>. I had tteokbokki for dinner, but perhaps my stomach didn't take it well or maybe I was too stressed from what had happened the day before. 
 
 Starting around 9 PM, the pain was so unbearable that I couldn’t study at all. Actually, rather than feeling like my stomach was burning, it felt as if someone had punched me hard in the stomach, leaving a deep bruise on my stomach lining. It was as if someone struck my upper abdomen with a baseball bat. 
@@ -22,10 +24,14 @@ The main ingredients of the pills I took were **dicyclomine hydrochloride** [(li
 
 Dicyclomine hydrochloride helps relieve abdominal pain through a dual-action mechanism as an **antispasmodic** and **anticholinergic agent** [(link)](https://www.carehospitals.com/medicine-detail/dicyclomine-hydrochloride). In other words, it blocks **acetylcholine**, a neurotransmitter responsible for muscle contractions, from acting on specific receptor sites [(link)](https://go.drugbank.com/drugs/DB00804).
 
+## Analysis
+
+### Question 1 
 > *But how are muscle contractions and stomach pain related? How does an anticholinergic drug, which blocks acetylcholine (a neurotransmitter responsible for muscle contraction), help relieve stomach pain?*
 
 First, when the **smooth muscles** of the gastrointestinal tract contract involuntarily, it can cause spasms and pain [(link)](https://resources.healthgrades.com/right-care/bones-joints-and-muscles/stomach-muscle-spasm). Anticholinergic **antispasmodic** drugs help by preventing acetylcholine from binding to nerve cell receptors, which in turn **relaxes the smooth muscles** of the digestive tract. In other words, these drugs work by **blocking acetylcholine activity in both the central and peripheral nervous systems** [(link)](https://www.rxlist.com/how_do_anticholinergic_antispasmodic_agents_work/drug-class.htm). This blocking action suppresses **involuntary muscle movements** in various organs, including the stomach and intestines, thereby reducing pain and spasms.
 
+### Question 2 
 > *What exactly is acetylcholine, and does preventing it from binding to nerve cell receptors cause muscle relaxation?*
 
 **Acetylcholine (ACh)** is an organic compound that functions as a **neurotransmitter** in both the **central and peripheral nervous systems** [(link)](https://en.wikipedia.org/wiki/Acetylcholine). It is synthesized from **choline** and **acetyl-CoA** and is stored in **synaptic vesicles** at the nerve cell terminals until it is released [(link)](https://my.clevelandclinic.org/health/articles/24568-acetylcholine-ach).
@@ -37,6 +43,7 @@ Once released, acetylcholine travels across the **synaptic cleft** and binds to 
 
 Since acetylcholine binding to receptors **triggers muscle contraction**, preventing it from binding to nerve cell receptors results in **muscle relaxation**.
 
+### Question 3
 > *How does acetylcholine binding to receptors cause muscle contraction?*
 
 #### **1. Release of Acetylcholine (ACh)**
@@ -59,6 +66,7 @@ The influx of sodium ions **depolarizes** the muscle fiber, triggering an **acti
 
 This action potential leads to a series of intracellular events that result in **muscle contraction**.
 
+### Question 4
 > *Anticholinergic drugs prevent acetylcholine from binding to nerve cell receptors. How does this process work?*
 
 Anticholinergic drugs work by **competitively inhibiting** acetylcholine (ACh) from binding to **muscarinic and nicotinic receptors** [(link)](https://www.osmosis.org/answers/anticholinergics).

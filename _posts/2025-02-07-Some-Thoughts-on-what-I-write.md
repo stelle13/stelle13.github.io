@@ -9,8 +9,6 @@ tags:
   - Memories
 ---
 
-I'll underline the key words and phrases using markdown. Here's the formatted text:
-
 How do humans find meaning and create value amidst the countless experiences in life?
 
 Consider for a moment, a scene from *The Matrix* (1999), where main protagonists Neo and Morpheus debate about the nature of reality inside the Construct. <u>What we perceive as reality is, ultimately, just a result of neurotransmitter reactions in the brain</u>. In the same way, even our thoughts are nothing more than the products of chemical reactions.

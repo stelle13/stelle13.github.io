@@ -9,7 +9,7 @@ tags:
   - Biology
 ---
 
-# Introduction
+## Introduction
 
 This post contains information concerning antidepressants, such as their chemical structures and mechanism of action, as well as why I became interested in learning about how they function physiologically. 
 

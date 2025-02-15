@@ -13,6 +13,8 @@ tags:
 
 This post contains information concerning antidepressants, such as their chemical structures and mechanism of action, as well as why I became interested in learning about how they function physiologically. 
 
+## Motivation
+
 Occasionally, when I close my eyes in the school library near my home, that scorching summer of 2021 comes flashing back to memory. 
 
 Back then, COVID-19 was at its height in South Korea, and I spent my time reading books or writing blog posts in the completely empty school library. The university was closed due to online classes, and as a first-year student, I, along with other friends from the 2019, 2020, and 2021 classes (the so-called "COVID classes"), had to endure meaninglessness, loneliness, and a solitary struggle.

@@ -9,6 +9,11 @@ tags:
   - Memories
 ---
 
+## Introduction
+
+This post contains my personal opinions and thoughts concerning biomedical research, especially those concerning the treatment of human diseases. 
+
+---
 How do humans find meaning and create value amidst the countless experiences in life?
 
 Consider for a moment, a scene from *The Matrix* (1999), where main protagonists Neo and Morpheus debate about the nature of reality inside the Construct. <u>What we perceive as reality is, ultimately, just a result of neurotransmitter reactions in the brain</u>. In the same way, even our thoughts are nothing more than the products of chemical reactions.
@@ -37,7 +42,7 @@ For instance, in the case of hyperhidrosis, I have often struggled with discomfo
 
 Now, let us consider a different perspective: social contribution—a term that my professors frequently emphasized during my college years. The question, "Why do universities exist?" has one universally accepted answer, agreed upon both within and outside academia:
 
-> <u>Academic institutions (in particular, universities) exist to cultivate talented individuals who can make society a better place and to conduct fundamental research—especially in basic sciences—that serves as the foundation for many industries. Ultimately, these efforts contribute to creating a better world for future generations.</u>
+> <u>Academic institutions (in particular, universities) exist to cultivate talented individuals who can make society a better place and to conduct fundamental research—especially in basic sciences—that serves as the foundation for many industries. Ultimately, these efforts contribute to creating a better world for future generations. - One of My College Professors </u>
 
 In this context, <u>applying undergraduate and graduate-level chemistry knowledge to pharmaceutical research is a meaningful way to realize the overarching educational mission of universities: social contribution</u>. Our society faces numerous complex challenges. By tackling these problems and gradually finding solutions, we can improve the quality of life for many people and achieve shared prosperity. As a college student with a background in chemistry, I recognize that pharmaceutical research holds immense potential to address pressing issues.
 

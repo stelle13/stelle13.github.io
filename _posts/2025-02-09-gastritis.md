@@ -9,9 +9,12 @@ tags:
   - Biology
 ---
 
-## Preamble
+## Introduction
 
-On January 28, 2025, I was in a lot of pain again due to <u>chronic gastritis</u>. I had tteokbokki for dinner, but perhaps my stomach didn't take it well or maybe I was too stressed from what had happened the day before. 
+This post contains information concerning gastritis, or inflammation of the stomach lining, and medications usually prescribed to treat gastritis, as well as their chemical structures and physiological mechanism of action.
+
+---
+On January 28, 2025, I was in a lot of pain again due to <u>chronic gastritis</u>. Perhaps my stomach didn't take my dinner well or maybe I was too stressed from what had happened the day before. 
 
 Starting around 9 PM, the pain was so unbearable that I couldn’t study at all. Actually, rather than feeling like my stomach was burning, it felt as if someone had punched me hard in the stomach, leaving a deep bruise on my stomach lining. It was as if someone struck my upper abdomen with a baseball bat. 
 

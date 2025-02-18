@@ -40,7 +40,7 @@ For instance, in the case of hyperhidrosis, I have often struggled with discomfo
 
 <u>Through personal research, I learned about the causes of hyperhidrosis, the mechanisms behind medications like Driclor, and the principles of iontophoresis treatment</u>. By documenting these findings, I found that my notes eventually became valuable references, encouraging me to continue keeping records. This habit of writing down my thoughts to deepen my understanding was, in retrospect, the starting point of my interest in pharmaceuticals.
 
-Now, let us consider a different perspective: social contribution—a term that my professors frequently emphasized during my college years. The question, "Why do universities exist?" has one universally accepted answer, agreed upon both within and outside academia:
+Now, let us consider a different perspective: social contribution—a term that my professors frequently emphasized during my college years. A few months ago, one of my professors remarked to me that the question, "Why do universities exist?" has one universally accepted answer, agreed upon both within and outside academia. 
 
 > <u>Academic institutions (in particular, universities) exist to cultivate talented individuals who can make society a better place and to conduct fundamental research—especially in basic sciences—that serves as the foundation for many industries. Ultimately, these efforts contribute to creating a better world for future generations. - Jae-Ho Cheong, M.D. Ph.D </u>
 
